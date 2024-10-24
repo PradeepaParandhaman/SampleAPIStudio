@@ -1,0 +1,34 @@
+projects:
+  Routing_Project_UI:
+    description: This project contains only mandatory policies - transport and routing.
+    tags:
+      - transport
+      - routing
+    lastUpdated: 1727763333554
+  IAM_Project_UI:
+    description: This Project contains - IAM, Transport and routing policies.
+    tags: []
+    lastUpdated: 1727764217620
+  LogInvocation_Project_UI:
+    description: This project contains - Log Invocation, Routing and transport.
+    tags:
+      - log
+      - transport
+      - routing
+    lastUpdated: 1727765841380
+  IAM_Log_Req_Res_Project_UI:
+    description: >-
+      This project contains - Log, IAM , Req-Res transformation, Routing and
+      transport.
+    tags:
+      - log
+      - req
+      - res
+      - iam
+      - route
+      - tran
+    lastUpdated: 1727768158969
+  Test-Test:
+    description: ''
+    tags: []
+    lastUpdated: 1729746094879

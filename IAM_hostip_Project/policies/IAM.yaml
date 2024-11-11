@@ -1,0 +1,24 @@
+#
+# Copyright Super iPaaS Integration LLC, an IBM Company 2024
+#
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: identify_and_authorize
+  version: 1.0
+  namespace: iam_host_ip
+  tags:
+    - identify_and_authorize
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: 'global' #Other values are 'registered' & 'anonymous'
+      hostNameAddress:
+        applicationLookup: 'registered'
+      httpBasicAuth:
+        applicationLookup: 'registered'
+      ipAddressRange:
+        applicationLookup: 'registered'

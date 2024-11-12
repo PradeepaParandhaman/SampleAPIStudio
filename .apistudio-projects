@@ -1,22 +1,22 @@
 projects:
-  Routing_Project:
+  Routing_Project_UI:
     description: This project contains only mandatory policies - transport and routing.
     tags:
       - transport
       - routing
     lastUpdated: 1727763333554
-  IAM_Project:
+  IAM_Project_UI:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []
     lastUpdated: 1727764217620
-  LogInvocation_Project:
+  LogInvocation_Project_UI:
     description: This project contains - Log Invocation, Routing and transport.
     tags:
       - log
       - transport
       - routing
     lastUpdated: 1727765841380
-  IAM_Log_Req_Res_Project:
+  IAM_Log_Req_Res_Project_UI:
     description: >-
       This project contains - Log, IAM , Req-Res transformation, Routing and
       transport.
@@ -37,12 +37,6 @@ projects:
       - ipaddress
       - Log
     lastUpdated: 1730109431212
-  IAM_alltypes_Project:
-    description: This project contains all supported types in IAM project.
-    tags:
-      - IAM
-      - Alltypes
-    lastUpdated: 1730110124305
   CORS_Project:
     description: This project contains only policies - transport,  routing and CORS.
     tags:
@@ -64,14 +58,4 @@ projects:
       - policies
       - error_processing
       - service_cache
-    lastUpdated: 1730970289658  
-  RateLimiter_Monitoring_Project copy:
-    description: >-
-      This project contains all policies related to Monitoring and Error
-      processing.
-    tags:
-      - monitoring
-      - policies
-      - error_processing
-      - rate_limiter
-    lastUpdated: 1730970787734  
+    lastUpdated: 1730970289658

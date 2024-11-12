@@ -1,8 +1,4 @@
 projects:
-  test:
-    description: ''
-    tags: []
-    lastUpdated: 1727762550682
   Routing_Project:
     description: This project contains only mandatory policies - transport and routing.
     tags:

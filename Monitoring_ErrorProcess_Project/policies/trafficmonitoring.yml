@@ -1,0 +1,36 @@
+#
+# Copyright Super iPaaS Integration LLC, an IBM Company 2024
+#
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: monitor
+  version: 1.0
+  namespace: mon
+  tags:
+    - monitor
+spec:
+  enabled: true
+  condition: |
+     "${fault-count} equals 10 and ${average-response} equals 10"
+# possible values are Availability(%), Average Response Time (ms), Fault Count, Maximum Response Time(ms), Minimum Response Time(ms), Success Count, Total Request Count
+# other operators include greater than and less than
+  applications:
+      - app1
+      - app2
+  alert-configuration:
+    interval: 2m # m,h,d,w,cw,cm are possible values
+    frequency: 'always | once' 
+    message: 'Throtting reached!'
+  notify-on-breach:
+    - self
+    - dev_portals :
+      - portal 1
+      - portal 2
+    - email:
+      - pradee@sag.com
+      - daso@sag.com
+    - snmp
+    - jdbc
+    - log-file:
+        level: info

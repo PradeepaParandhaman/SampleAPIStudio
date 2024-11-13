@@ -59,7 +59,7 @@ projects:
       - error_processing
       - service_cache
     lastUpdated: 1730970289658
-  MutiYamlProject:
+  MultiYamlProject:
     description: >-
       This project contains Multi Yaml files.
     tags:

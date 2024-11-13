@@ -68,7 +68,7 @@ projects:
       - test
       - vcs
     lastUpdated: 1730970289658
-  Monitoring_ErrorProcess_Project:
+ Monitoring_ErrorProcess_Project:
     description: >-
       This project contains all policies related to Monitoring and Error
       processing.
@@ -76,6 +76,5 @@ projects:
       - monitoring
       - policies
       - error_processing
-      - service_cache
-    lastUpdated: 1730970289658
+    lastUpdated: 1730969043832
 

@@ -59,3 +59,23 @@ projects:
       - error_processing
       - service_cache
     lastUpdated: 1730970289658
+  MutiYamlProject:
+    description: >-
+      This project contains Multi Yaml files.
+    tags:
+      - monitoring
+      - MultiYaml
+      - test
+      - vcs
+    lastUpdated: 1730970289658
+  Monitoring_ErrorProcess_Project:
+    description: >-
+      This project contains all policies related to Monitoring and Error
+      processing.
+    tags:
+      - monitoring
+      - policies
+      - error_processing
+      - service_cache
+    lastUpdated: 1730970289658
+

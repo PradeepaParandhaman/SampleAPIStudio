@@ -29,7 +29,7 @@ projects:
       - tran
     lastUpdated: 1727768158969
   IAM_hostip_Project:
-    description: >-
+    description: |-
       This Project contains IAM -> hostName and ipaddress config along with Log
         Invocation.
     tags:
@@ -60,12 +60,14 @@ projects:
       - service_cache
     lastUpdated: 1730970289658
   MultiYamlProject:
-    description: >-
-      This project contains Multi Yaml files.
+    description: This project contains Multi Yaml files.
     tags:
       - monitoring
       - MultiYaml
       - test
       - vcs
     lastUpdated: 1730970289658
-
+  TestProject:
+    description: ''
+    tags: []
+    lastUpdated: 1732678952344

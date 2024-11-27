@@ -1,0 +1,20 @@
+#
+# Copyright Super iPaaS Integration LLC, an IBM Company 2024
+#
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: IAM_hostIPAPI
+  namespace: iam_host_ip
+  version: 1.0
+  tags:
+    - Razorpay
+    - Cred
+    - UPI
+  type: REST
+spec:
+  mocked: true
+  api-spec: 
+    $path: api/spec/petstore.yaml
+  policy-sequence: 
+    - $ref: iam_host_ip:policyseq:1

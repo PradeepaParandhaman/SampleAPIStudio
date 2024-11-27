@@ -15,6 +15,6 @@ metadata:
 spec:
   mocked: true
   api-spec: 
-    $path: api/spec/petstore.yaml
+    $path: petstore.yaml
   policy-sequence: 
     - $ref: iam_host_ip:policyseq:1

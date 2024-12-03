@@ -5,7 +5,7 @@ kind: environment
 apiVersion: api.webmethods.io/beta
 metadata:
   name: env
-  version: alpha
+  version: 1
   namespace: iam_host_ip
   tags:
     - payEnv

@@ -11,7 +11,7 @@ metadata:
   namespace: iam_host_ip
 spec:
   api:
-    $ref: iam_host_ip:IAM_hostIPAPI:1.0
+    $ref: iam_host_ip:IAM_hostIPAPI:1.0.0
   environment:
    $ref: iam_host_ip:env:1
   request:

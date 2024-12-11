@@ -4,7 +4,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Dec12_Import
+  name: API_PullOperation
   namespace: dev_iam
   version: alpha
   tags:

@@ -4,7 +4,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: IAM_hostIPAPI
+  name: IAM_hostIPAPI_Import
   namespace: iam_host_ip
   version: 1.0.0
   tags:

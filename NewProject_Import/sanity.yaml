@@ -11,7 +11,7 @@ metadata:
   namespace: dev_iam
 spec:
   api:
-    $ref: dev_iam:API_IAM_DevUI:alpha
+    $ref: dev_iam:API_PullOperation:alpha
   environment:
     $ref: dev_iam:env:alpha
   request:

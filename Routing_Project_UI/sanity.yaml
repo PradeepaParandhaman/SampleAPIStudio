@@ -11,7 +11,7 @@ metadata:
   namespace: dev
 spec:
   api:
-    $ref: dev:APIRouting_DevUI:1.0
+    $ref: dev:APIRouting_SwitchAndPull:1.0
   environment:
     $ref: dev:env:alpha
   request:

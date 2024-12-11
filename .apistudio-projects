@@ -67,3 +67,11 @@ projects:
       - test
       - vcs
     lastUpdated: 1730970289658
+  NewProject_Import:
+    description: This project contains Multi Yaml files.
+    tags:
+      - monitoring
+      - newproject
+      - test
+      - vcs
+    lastUpdated: 1730970289658

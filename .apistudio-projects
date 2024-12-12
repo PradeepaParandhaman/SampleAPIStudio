@@ -37,14 +37,6 @@ projects:
       - error_processing
       - service_cache
     lastUpdated: 1730970289658
-  MultiYamlProject:
-    description: This project contains Multi Yaml files.
-    tags:
-      - monitoring
-      - MultiYaml
-      - test
-      - vcs
-    lastUpdated: 1730970289658
   Routing_Project_UI:
     description: This project contains only mandatory policies - transport and routing.
     tags:
@@ -81,3 +73,11 @@ projects:
       - listing
       - vc
     lastUpdated: 1733996153506
+  MultiYamlProject_test:
+    description: This project contains Multi Yaml files.
+    tags:
+      - monitoring
+      - MultiYaml
+      - test
+      - vcs
+    lastUpdated: 1733996711881

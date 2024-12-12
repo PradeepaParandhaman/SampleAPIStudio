@@ -33,12 +33,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1730809721577
-  IAM_jwt_Project:
-    description: This project contains few supported types in IAM project.
-    tags:
-      - IAM
-      - jwt
-    lastUpdated: 1730963588569
   ServiceCache_Monitoring_Project:
     description: >-
       This project contains all policies related to Monitoring and Error

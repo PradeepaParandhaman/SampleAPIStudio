@@ -67,3 +67,9 @@ projects:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []
     lastUpdated: 1733988974142
+  IAM_jwt_Project_test:
+    description: This project contains few supported types in IAM project.
+    tags:
+      - IAM
+      - jwt
+    lastUpdated: 1733994730744

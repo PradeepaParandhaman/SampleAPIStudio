@@ -27,12 +27,6 @@ projects:
       - ipaddress
       - Log
     lastUpdated: 1730109431212
-  CORS_Project:
-    description: This project contains only policies - transport,  routing and CORS.
-    tags:
-      - transport
-      - routing
-    lastUpdated: 1730809721577
   ServiceCache_Monitoring_Project:
     description: >-
       This project contains all policies related to Monitoring and Error
@@ -67,3 +61,9 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1733994730744
+  CORS_Project_test:
+    description: This project contains only policies - transport,  routing and CORS.
+    tags:
+      - transport
+      - routing
+    lastUpdated: 1733995133986

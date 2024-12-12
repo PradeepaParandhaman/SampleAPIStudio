@@ -1,10 +1,4 @@
 projects:
-  Routing_Project_UI:
-    description: This project contains only mandatory policies - transport and routing.
-    tags:
-      - transport
-      - routing
-    lastUpdated: 1727763333554
   IAM_Project_UI:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []
@@ -67,25 +61,9 @@ projects:
       - test
       - vcs
     lastUpdated: 1730970289658
-  test_dec12:
-    description: ''
-    tags: []
-    lastUpdated: 1733985352277
-  test_dec12_edit:
-    description: ''
-    tags: []
-    lastUpdated: 1733985365435
   Routing_Project_UI_edit:
     description: This project contains only mandatory policies - transport and routing.
     tags:
       - transport
       - routing
     lastUpdated: 1733985892159
-  Test:
-    description: ''
-    tags: []
-    lastUpdated: 1733986489547
-  test:
-    description: ''
-    tags: []
-    lastUpdated: 1733986507410

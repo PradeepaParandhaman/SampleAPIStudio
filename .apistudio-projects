@@ -67,3 +67,11 @@ projects:
       - transport
       - routing
     lastUpdated: 1733995133986
+  ImportInSamplesVcsRepo_UI:
+    description: This is a project created from Existing files in VCS
+    tags:
+      - listing
+      - vcs
+      - test
+      - existing
+    lastUpdated: 1733996011591

@@ -1,8 +1,4 @@
 projects:
-  IAM_Project_UI:
-    description: This Project contains - IAM, Transport and routing policies.
-    tags: []
-    lastUpdated: 1727764217620
   LogInvocation_Project_UI:
     description: This project contains - Log Invocation, Routing and transport.
     tags:

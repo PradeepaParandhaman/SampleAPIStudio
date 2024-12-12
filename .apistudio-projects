@@ -61,12 +61,6 @@ projects:
       - test
       - vcs
     lastUpdated: 1730970289658
-  Routing_Project_UI_edit:
-    description: This project contains only mandatory policies - transport and routing.
-    tags:
-      - transport
-      - routing
-    lastUpdated: 1733985892159
   Routing_Project_UI:
     description: This project contains only mandatory policies - transport and routing.
     tags:

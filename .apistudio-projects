@@ -75,3 +75,9 @@ projects:
       - test
       - existing
     lastUpdated: 1733996011591
+  ImportInSamplesVcsRepo_UI_ygu:
+    description: This is a project created from Existing files in VCS
+    tags:
+      - listing
+      - vc
+    lastUpdated: 1733996153506

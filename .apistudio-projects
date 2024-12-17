@@ -89,3 +89,9 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1733996812482
+  ImportInSamplesVcsRepo_UI_ygu copy:
+    description: This is a project created from Existing files in VCS
+    tags:
+      - listing
+      - vc
+    lastUpdated: 1734425798108

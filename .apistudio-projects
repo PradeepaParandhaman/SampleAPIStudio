@@ -49,12 +49,6 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1733994730744
-  CORS_Project_test:
-    description: This project contains only policies - transport,  routing and CORS.
-    tags:
-      - transport
-      - routing
-    lastUpdated: 1733995133986
   ImportInSamplesVcsRepo_UI_ygu copy:
     description: This is a project created from Existing files in VCS
     tags:
@@ -73,3 +67,9 @@ projects:
       - test
       - vcs
     lastUpdated: 1734433018268
+  CORS_Project:
+    description: This project contains only policies - transport,  routing and CORS.
+    tags:
+      - transport
+      - routing
+    lastUpdated: 1734433151088

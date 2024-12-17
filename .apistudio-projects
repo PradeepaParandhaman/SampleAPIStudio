@@ -55,10 +55,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733995133986
-  testedit_test:
-    description: ''
-    tags: []
-    lastUpdated: 1733996761764
   ImportInSamplesVcsRepo_UI_ygu copy:
     description: This is a project created from Existing files in VCS
     tags:
@@ -77,3 +73,7 @@ projects:
       - test
       - vcs
     lastUpdated: 1734433018268
+  testedit_testproject:
+    description: ''
+    tags: []
+    lastUpdated: 1734433083734

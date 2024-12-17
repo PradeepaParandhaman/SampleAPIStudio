@@ -73,7 +73,3 @@ projects:
       - test
       - vcs
     lastUpdated: 1734433018268
-  testedit_testproject:
-    description: ''
-    tags: []
-    lastUpdated: 1734433083734

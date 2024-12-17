@@ -43,12 +43,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733988881438
-  ImportInSamplesVcsRepo_UI_ygu copy:
-    description: This is a project created from Existing files in VCS
-    tags:
-      - listing
-      - vc
-    lastUpdated: 1734425798108
   IAM_Project_UI:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []

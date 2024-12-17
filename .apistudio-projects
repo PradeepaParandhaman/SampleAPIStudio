@@ -43,10 +43,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733988881438
-  IAM_Project_UI_test:
-    description: This Project contains - IAM, Transport and routing policies.
-    tags: []
-    lastUpdated: 1733988974142
   IAM_jwt_Project_test:
     description: This project contains few supported types in IAM project.
     tags:
@@ -77,3 +73,7 @@ projects:
       - listing
       - vc
     lastUpdated: 1734425798108
+  IAM_Project_UI:
+    description: This Project contains - IAM, Transport and routing policies.
+    tags: []
+    lastUpdated: 1734432785677

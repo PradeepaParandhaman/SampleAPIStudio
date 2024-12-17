@@ -43,12 +43,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733988881438
-  IAM_jwt_Project_test:
-    description: This project contains few supported types in IAM project.
-    tags:
-      - IAM
-      - jwt
-    lastUpdated: 1733994730744
   ImportInSamplesVcsRepo_UI_ygu copy:
     description: This is a project created from Existing files in VCS
     tags:
@@ -73,3 +67,9 @@ projects:
       - transport
       - routing
     lastUpdated: 1734433151088
+  IAM_jwt_Project:
+    description: This project contains few supported types in IAM project.
+    tags:
+      - IAM
+      - jwt
+    lastUpdated: 1734433163038

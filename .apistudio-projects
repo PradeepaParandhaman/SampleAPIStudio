@@ -55,14 +55,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733995133986
-  MultiYamlProject_test:
-    description: This project contains Multi Yaml files.
-    tags:
-      - monitoring
-      - MultiYaml
-      - test
-      - vcs
-    lastUpdated: 1733996711881
   testedit_test:
     description: ''
     tags: []
@@ -77,3 +69,11 @@ projects:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []
     lastUpdated: 1734432785677
+  MultiYamlProject:
+    description: This project contains Multi Yaml files.
+    tags:
+      - monitoring
+      - MultiYaml
+      - test
+      - vcs
+    lastUpdated: 1734433018268

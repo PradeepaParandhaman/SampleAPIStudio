@@ -71,10 +71,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1734608241435
-  empty:
-    description: ''
-    tags: []
-    lastUpdated: 1734608248777
   Test_Abc:
     description: ''
     tags: []

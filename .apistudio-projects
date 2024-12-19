@@ -75,7 +75,3 @@ projects:
       - empty_project
       - test
     lastUpdated: 1734598058732
-  Import:
-    description: ''
-    tags: []
-    lastUpdated: 1734607970290

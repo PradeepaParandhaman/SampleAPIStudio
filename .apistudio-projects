@@ -67,10 +67,6 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1734433163038
-  NewProject_dec20:
-    description: ''
-    tags: []
-    lastUpdated: 1734671899611
   test_Import:
     description: ''
     tags: []

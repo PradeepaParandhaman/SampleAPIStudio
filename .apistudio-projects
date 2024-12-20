@@ -67,3 +67,11 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1734433163038
+  CreateEmptyProjectInVcs_UI:
+    description: This is a project created in VCS from Project Listing page
+    tags:
+      - listing
+      - vcs
+      - empty_project
+      - test
+    lastUpdated: 1734682178643

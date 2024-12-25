@@ -75,3 +75,11 @@ projects:
       - empty_project
       - test
     lastUpdated: 1734682178643
+  ImportInSamplesVcsRepo_UI:
+    description: This is a project created from Existing files in VCS
+    tags:
+      - listing
+      - vcs
+      - test
+      - existing
+    lastUpdated: 1735099713580

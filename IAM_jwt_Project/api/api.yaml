@@ -4,13 +4,14 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: IAM_CompleteProject
+  name: IAM_CompleteProject_test
   namespace: iam_all
   version: 1.0
   tags:
     - Razorpay
     - Cred
     - UPI
+    - test_name
   type: REST
 spec:
   mocked: true

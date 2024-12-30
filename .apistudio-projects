@@ -75,3 +75,9 @@ projects:
       - empty_project
       - test
     lastUpdated: 1734682178643
+  IAM_jwt_Project copy:
+    description: This project contains few supported types in IAM project.
+    tags:
+      - IAM
+      - jwt
+    lastUpdated: 1735558293308

@@ -81,3 +81,11 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1735558293308
+  ImportInSamplesVcsRepo_UI:
+    description: This is a project created from Existing files in VCS
+    tags:
+      - listing
+      - vcs
+      - test
+      - existing
+    lastUpdated: 1735791017376

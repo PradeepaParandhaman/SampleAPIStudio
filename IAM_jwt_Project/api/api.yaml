@@ -12,6 +12,7 @@ metadata:
     - Cred
     - UPI
     - test_name
+    - edit_tag
   type: REST
 spec:
   mocked: true

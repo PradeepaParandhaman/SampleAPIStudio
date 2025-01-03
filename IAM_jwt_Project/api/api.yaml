@@ -4,7 +4,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: IAM_CompleteProject_test
+  name: IAM_CompleteProject_test_edit
   namespace: iam_all
   version: 1.0
   tags:

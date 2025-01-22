@@ -89,11 +89,3 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1735900642391
-  ImportInSamplesVcsRepo_UI:
-    description: This is a project created from Existing files in VCS
-    tags:
-      - listing
-      - vcs
-      - test
-      - existing
-    lastUpdated: 1737518941165

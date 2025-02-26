@@ -4,7 +4,7 @@
 kind: policySequence
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: conditional_routing_policies
+  name: conditional_routing_policies_ui
   version: 1.0
   namespace: dev
   tags:
@@ -12,6 +12,6 @@ metadata:
     - policyseq
 spec:
   routing:
-    - $ref: dev:conditionalRouting:1.0
+    - $ref: dev:conditionalRouting_ui:1.0
   transport:
-    - $ref: dev:transport_policy:alpha
+    - $ref: dev:transport_policy_ui:alpha

@@ -4,7 +4,7 @@
 kind: Route
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: conditionalRouting
+  name: conditionalRouting_ui
   version: 1.0
   namespace: dev
   tags:
@@ -12,7 +12,7 @@ metadata:
     - test
 spec:
   default-endpoint:
-    $ref: dev:default_endpoint:1.0  
+    $ref: dev:default_endpoint_ui:1.0  
   conditional-endpoints:
     - condition: "(${request.httpMethod} equals POST) or (${request.headers.name} notEquals ${request.payload.jsonPath[$.pet.name]})"
       endpoint:

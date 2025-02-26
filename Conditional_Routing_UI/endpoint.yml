@@ -4,7 +4,7 @@
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: default_endpoint
+  name: default_endpoint_ui
   version: 1.0
   namespace: dev
 spec:
@@ -23,7 +23,7 @@ spec:
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: conditional_endpoint1
+  name: conditional_endpoint1_ui
   version: 1.0
   namespace: dev
 spec:
@@ -43,7 +43,7 @@ spec:
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: conditional_endpoint2
+  name: conditional_endpoint2_ui
   version: 1.0
   namespace: dev
 spec:

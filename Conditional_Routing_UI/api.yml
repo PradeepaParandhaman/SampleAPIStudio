@@ -4,7 +4,7 @@
 kind: api
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: Conditional_Routing_Automation
+  name: Conditional_Routing_UI_Automation
   namespace: dev
   version: 1.0
   tags:

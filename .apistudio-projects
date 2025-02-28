@@ -1,8 +1,4 @@
 projects:
-  '123':
-    description: ''
-    tags: []
-    lastUpdated: 1740629657036
   LogInvocation_Project_UI:
     description: This project contains - Log Invocation, Routing and transport.
     tags:
@@ -96,3 +92,7 @@ projects:
       - conditional
       - policy
     lastUpdated: 1740571653124
+  123_test:
+    description: ''
+    tags: []
+    lastUpdated: 1740746361187

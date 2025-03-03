@@ -1,0 +1,16 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: apiyaml
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+    - abc
+    - '123'
+  type: REST
+spec:
+  api-spec:
+    $path: ./api.yaml-spec.yaml
+  policy-sequence: 
+    - $ref: dev:dev_policies:1.0

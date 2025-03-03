@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: my-loadbalancer-routing-test
+  name: my-loadbalancer-routing-test_ui
   version: 1.0
   namespace: dev
   tags:
@@ -10,15 +10,15 @@ metadata:
     - policy
 spec:
   loadbalance-endpoints:
-    - $ref: dev:lb_endpoint:1.0
+    - $ref: dev:lb_endpoint_ui:1.0
       suspend-on-duration: 20s
-    - $ref: dev:lb_endpoint2:1.0
+    - $ref: dev:lb_endpoint2_ui:1.0
       suspend-on-duration: 40s
 ---
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: lb_endpoint
+  name: lb_endpoint_ui
   version: 1.0
   namespace: dev
 spec:
@@ -37,7 +37,7 @@ spec:
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: lb_endpoint2
+  name: lb_endpoint2_ui
   version: 1.0
   namespace: dev
 spec:

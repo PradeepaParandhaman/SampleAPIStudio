@@ -1,14 +1,14 @@
 kind: policySequence
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: lb_policies_test
+  name: lb_policies_ui
   version: 1.0
   namespace: dev
-  tags: 
+  tags:
     - test
-    - LB
+    - lb
 spec:
   routing:
-    - $ref: dev:my-loadbalancer-routing:1.0s
+    - $ref: dev:my-loadbalancer-routing-test_ui:1.0
   transport:
-    - $ref: dev:transport_policy:alpha
+    - $ref: dev:transport_policy_ui:alpha

@@ -117,6 +117,7 @@ projects:
     tags: []
     lastUpdated: 1740997868892
   OutBoundAlias_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741007012390
+    description: OutBoundAlias project for UI
+    tags:
+      - alias
+    lastUpdated: 1741007036133

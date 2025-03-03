@@ -12,7 +12,7 @@ spec:
   iam:
     - $ref: dev:identify_and_authorize_ui:1.0
   req-processing:
-    - $ref: sample:req_datamasking:1.0
+    - $ref: sample:req_datamasking_ui:1.0
   monitoring:
    - $ref: beta:log_invocation_ui:1.0
   routing:

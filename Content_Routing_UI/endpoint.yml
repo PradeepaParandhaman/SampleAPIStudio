@@ -1,7 +1,7 @@
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: default_endpoint
+  name: default_endpoint_ui
   version: 1.0
   namespace: dev
 spec:
@@ -16,12 +16,11 @@ spec:
   serviceRegistryParameters:
     - name: ""
       value: ""
-
 ---
-kind: HTTPEndpoint
+ind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: content_based_endpoint1
+  name: content_based_endpoint1_ui
   version: 1.0
   namespace: dev
 spec:
@@ -41,7 +40,7 @@ spec:
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: content_based_endpoint2
+  name: content_based_endpoint2_ui
   version: 1.0
   namespace: dev
 spec:
@@ -56,12 +55,11 @@ spec:
   serviceRegistryParameters:
     - name: ""
       value: ""
-
 ---
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: content_based_endpoint3
+  name: content_based_endpoint3_ui
   version: 1.0
   namespace: dev
 spec:

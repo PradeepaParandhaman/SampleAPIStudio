@@ -1,7 +1,7 @@
 kind: policySequence
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: dynamic_routing_header_policies
+  name: dynamic_routing_header_policies_ui
   version: 1.0
   namespace: dev
   tags:
@@ -9,6 +9,6 @@ metadata:
     - API
 spec:
   routing:
-    - $ref: dev:dynamicRoutingHeader:1.0
+    - $ref: dev:dynamicRoutingHeader_ui:1.0
   transport:
-    - $ref: dev:transport_policy:alpha
+    - $ref: dev:transport_policy_ui:alpha

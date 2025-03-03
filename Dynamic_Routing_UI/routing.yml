@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: dynamicRoutingHeader
+  name: dynamicRoutingHeader_ui
   version: 1.0
   namespace: dev
 spec:
@@ -11,13 +11,13 @@ spec:
   dynamic-endpoints:
   - useHeader:
       name: sample-header-name
-      $ref: dev:dynamic_endpoint_header:1.0
+      $ref: dev:dynamic_endpoint_header_ui:1.0
 
 ---
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: default_endpoint
+  name: default_endpoint_ui
   version: 1.0
   namespace: dev
 spec:
@@ -37,7 +37,7 @@ spec:
 kind: HTTPEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: dynamic_endpoint_header
+  name: dynamic_endpoint_header_ui
   version: 1.0
   namespace: dev
 spec:

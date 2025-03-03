@@ -1,0 +1,22 @@
+kind: policySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: dev_policies
+  version: 1.0
+  namespace: dev
+  tags:
+    - dev_policies
+spec:
+  transport:
+    - $ref: dev:enable_https_ui:1.0
+  iam:
+    - $ref: dev:identify_and_authorize_ui:1.0
+  req-processing:
+    - $ref: sample:req_datamasking:1.0
+  monitoring:
+   - $ref: beta:log_invocation_ui:1.0
+  routing:
+    - $ref: dev:my-default-routing_ui:1.0
+    - $ref: sample:OutboundAnonymous_ui:1.0
+  error-handling:
+    - $ref: sample:error_datamasking_ui:1.0

@@ -81,10 +81,6 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1735558293308
-  test_project:
-    description: ''
-    tags: []
-    lastUpdated: 1735900579798
   Conditional_Routing_UI:
     description: This project contains Conditional Routing policies.
     tags:

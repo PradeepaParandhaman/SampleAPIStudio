@@ -85,10 +85,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1735900579798
-  123_test:
-    description: ''
-    tags: []
-    lastUpdated: 1740746361187
   Conditional_Routing_UI:
     description: This project contains Conditional Routing policies.
     tags:

@@ -1,7 +1,7 @@
 kind: api
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: Content_Based_Routing_Automation
+  name: Content_Based_Routing_Automation_UI
   namespace: dev
   version: 1.0
   tags:
@@ -11,4 +11,4 @@ spec:
   api-spec:
     $path: petstore.yaml
   policy-sequence: 
-    - $ref: dev:content_based_routing_policies:1.0
+    - $ref: dev:content_based_routing_policies_ui:1.0

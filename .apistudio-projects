@@ -96,3 +96,9 @@ projects:
       - conditional
       - policy
     lastUpdated: 1740747988489
+  Content_Routing_UI:
+    description: ''
+    tags:
+      - test
+      - content_routing
+    lastUpdated: 1740988875584

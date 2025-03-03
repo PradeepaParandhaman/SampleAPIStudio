@@ -1,13 +1,13 @@
 kind: PolicySequence
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: dev_policies
+  name: dev_policies_ui
   version: 1.0
   namespace: dev
   tags:
     - dev_policies
 spec:
   routing:
-    - $ref: dev:customHttpHeader:1.0
+    - $ref: dev:customHttpHeader_ui:1.0
   transport:
-    - $ref: dev:transport_policy:alpha
+    - $ref: dev:transport_policy_ui:alpha

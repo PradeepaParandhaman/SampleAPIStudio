@@ -1,11 +1,14 @@
 kind: policySequence
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: content_based_routing_policies
+  name: content_based_routing_policies_ui
   version: 1.0
   namespace: dev
+  tags: 
+    - test
+    - abc
 spec:
   routing:
-    - $ref: dev:contentBasedRouting:1.0
+    - $ref: dev:contentBasedRouting_ui:1.0
   transport:
-    - $ref: dev:transport_policy:alpha
+    - $ref: dev:transport_policy_ui:alpha

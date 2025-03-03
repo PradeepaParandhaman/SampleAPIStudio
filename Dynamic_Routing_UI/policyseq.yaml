@@ -1,0 +1,14 @@
+kind: policySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: dynamic_routing_header_policies
+  version: 1.0
+  namespace: dev
+  tags:
+    - test
+    - API
+spec:
+  routing:
+    - $ref: dev:dynamicRoutingHeader:1.0
+  transport:
+    - $ref: dev:transport_policy:alpha

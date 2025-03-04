@@ -1,0 +1,23 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  version: '1.0'
+  namespace: mon
+  tags:
+    - log_invocation
+spec:
+  enabled: true
+  logRequestHeaders: true
+  logResponseHeaders: true
+  logRequestPayload: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: always
+  destination:
+    - self
+    - dev_portals:
+        - devportal 1
+    - email:
+        - rid@sag.com
+        - pradee@sag.com

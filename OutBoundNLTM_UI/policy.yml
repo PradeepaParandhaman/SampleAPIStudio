@@ -1,0 +1,72 @@
+ind: Transport
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: enable_https_nltm
+  namespace: dev
+  version: 1.0
+spec: 
+    protocol:
+      - http
+      - https
+---
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: my-default-routing_nltm
+  version: 1.0
+  namespace: dev
+  tags:
+    - routing
+    - route
+    - policy
+spec:
+  default-endpoint:
+    $ref: dev:default_endpoint_nltm:1.0
+---
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: identify_and_authorize_nltm
+  version: 1.0
+  namespace: dev
+  tags:
+    - identify_and_authorize
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: global
+      httpBasicAuth:
+        applicationLookup: registered
+---
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: default_endpoint_nltm
+  version: 1.0
+  namespace: dev
+spec:
+  url: ${pet_url_alias}  
+  method: GET
+  connectTimeout: 300
+  readTimeout: 200
+  sslConfig:
+    keyStoreAlias: DEFAULT_IS_KEYSTORE
+    keyAlias: ssos
+    trustStoreAlias: DEFAULT_IS_TRUSTSTORE
+  serviceRegistryParameters:
+    - name: ""
+      value: ""
+---
+kind: OutboundNTLMAuth  
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: OutboundNTLMAuth
+  version: 1.0
+  namespace: sample  
+spec:
+  enabled: true
+  use_incoming_http_credentials: false
+  use_transparent_auth: true

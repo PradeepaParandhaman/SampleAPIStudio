@@ -2,7 +2,7 @@ kind: PolicySequence
 apiVersion: api.webmethods.io/beta
 metadata:
   name: policyseq_mon
-  version: '1.0'
+  version: 1.0
   namespace: mon
   tags:
     - seq

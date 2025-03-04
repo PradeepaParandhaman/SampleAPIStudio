@@ -3,7 +3,7 @@ apiVersion: api.webmethods.io/beta
 metadata:
   name: MonitoringAPI1_Desktop
   namespace: mon
-  version: '1.0'
+  version: 1.0
   tags:
     - Razorpay
     - Cred

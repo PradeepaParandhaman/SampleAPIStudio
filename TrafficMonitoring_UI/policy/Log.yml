@@ -2,7 +2,7 @@ kind: Log
 apiVersion: api.webmethods.io/beta
 metadata:
   name: log_invocation
-  version: '1.0'
+  version: 1.0
   namespace: mon
   tags:
     - log_invocation

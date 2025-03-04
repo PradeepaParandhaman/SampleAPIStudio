@@ -4,7 +4,7 @@
 kind: IdentifyAndAuthorize
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: My_IAM
+  name: My_IAM_test
   version: alpha
   namespace: dev_all
   tags:

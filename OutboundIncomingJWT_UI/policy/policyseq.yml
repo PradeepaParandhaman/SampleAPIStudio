@@ -1,0 +1,16 @@
+kind: policySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: dev_policies_jwt
+  version: 1.0
+  namespace: dev
+  tags:
+    - dev_policies
+spec:
+  transport:
+    - $ref: dev:enable_https_jwt:1.0
+  iam:
+    - $ref: dev:identify_and_authorize_jwt:1.0
+  routing:
+    - $ref: dev:my-default-routing_jwt:1.0
+    - $ref: sample:OutboundIncomingJWT:1.0

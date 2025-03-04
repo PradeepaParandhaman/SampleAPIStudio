@@ -16,7 +16,7 @@ spec:
   conditional-endpoints:
     - condition: "(${request.httpMethod} equals POST) or (${request.headers.name} notEquals ${request.payload.jsonPath[$.pet.name]})"
       endpoint:
-        $ref: dev:conditional_endpoint1:1.0
+        $ref: dev:conditional_endpoint1_ui:1.0
     - condition: "(${request.httpMethod} equals PUT) and (${request.headers.name} equals ${request.payload.jsonPath[$.pet.name]})"
       endpoint:
-        $ref: dev:conditional_endpoint2:1.0
+        $ref: dev:conditional_endpoint2_ui:1.0

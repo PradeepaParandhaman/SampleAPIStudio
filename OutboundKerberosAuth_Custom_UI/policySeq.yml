@@ -13,4 +13,4 @@ spec:
     - $ref: dev:identify_and_authorize_ker:1.0
   routing:
     - $ref: dev:my-default-routing_ker:1.0
-    - $ref: sample:OutboundKerberosAuth_ker:1.0
+    - $ref: sample:OutboundKerberosAuth:1.0

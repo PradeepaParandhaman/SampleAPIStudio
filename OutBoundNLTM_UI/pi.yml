@@ -1,7 +1,7 @@
 kind: api
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: OutBoundNLTM_API_UI
+  name: OutBoundNLTM_API_UI_Desktop
   namespace: dev
   version: 1.0
   tags:

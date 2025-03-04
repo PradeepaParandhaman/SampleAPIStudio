@@ -1,4 +1,4 @@
-kind: HTTPEndpoint
+kind: HttpEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
   name: endpoint

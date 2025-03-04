@@ -1,4 +1,4 @@
-ind: Transport
+kind: Transport
 apiVersion: api.webmethods.io/v1
 metadata:
   name: enable_https_nltm

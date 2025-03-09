@@ -87,10 +87,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1733985243715
-  test:
-    description: ''
-    tags: []
-    lastUpdated: 1733985264921
   Outbound:
     description: ''
     tags: []

@@ -141,7 +141,3 @@ projects:
       - empty_project
       - test
     lastUpdated: 1741594811497
-  TestProject_UI:
-    description: This is a project created in VCS from Project Listing page
-    tags: []
-    lastUpdated: 1741596217829

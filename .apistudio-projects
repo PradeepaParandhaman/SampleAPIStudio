@@ -145,7 +145,3 @@ projects:
     description: This is a project created in VCS from Project Listing page
     tags: []
     lastUpdated: 1741596320790
-  TestProject_UI_test:
-    description: This is a project created in VCS from Project Listing page
-    tags: []
-    lastUpdated: 1741596502618

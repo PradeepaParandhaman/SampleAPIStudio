@@ -81,12 +81,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1740993354226
-  Dynamic_Routing_UI:
-    description: ''
-    tags:
-      - test
-      - dynamic
-    lastUpdated: 1740997572685
   LB_Routing_UI:
     description: ''
     tags: []

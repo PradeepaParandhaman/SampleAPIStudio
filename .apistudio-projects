@@ -73,12 +73,6 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1735558293308
-  Content_Routing_UI:
-    description: ''
-    tags:
-      - test
-      - content_routing
-    lastUpdated: 1740988875584
   CustomHTTP_UI:
     description: ''
     tags: []

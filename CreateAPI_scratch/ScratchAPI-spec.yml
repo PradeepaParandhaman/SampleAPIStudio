@@ -1,0 +1,95 @@
+openapi: 3.1.1
+info:
+  title: Sample API
+  version: 1.0.0
+  summary: test
+  contact:
+    url: ''
+  description: A sample API
+servers:
+  - url: /api/v3
+  - url: https://api.example.com/v1
+    description: test Production Server
+paths:
+  /users:
+    summary: Get all users
+    description: test_users
+    get:
+      responses:
+        '200':
+          description: test
+      operationId: getUsers
+      tags:
+        - test
+      parameters:
+        - name: name
+          in: query
+          description: Filter users by name
+          content:
+            application/json:
+              schema:
+                type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+      security: []
+      summary: test
+      description: test-summary
+    parameters:
+      - name: name
+        in: query
+        description: Filter users by name
+        content:
+          application/json:
+            schema:
+              type: string
+            example: GET /users?name=John&age=30
+  /users/{id}:
+    summary: Get a user by ID
+    description: ''
+    get:
+      responses:
+        200_test:
+          $ref: '#/components/responses/200'
+      parameters:
+        - name: userId
+          in: path
+          content:
+            application/json:
+              schema:
+                type: integer
+      summary: test_summary
+    parameters:
+      - name: id
+        in: path
+        content:
+          application/json:
+            schema:
+              type: integer
+    servers:
+      - url: https://api.example.com/v1
+        variables:
+          env:
+            default: dev
+components:
+  schemas:
+    User:
+      User:
+        type: object
+        properties:
+          id:
+            type: integer
+          name:
+            type: string
+          email:
+            type: string
+  responses:
+    '200':
+      description: test_200
+  securitySchemes: {}
+security: []
+externalDocs:
+  url: https://example.com
+  description: ''

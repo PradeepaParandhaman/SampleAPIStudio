@@ -1,0 +1,10 @@
+kind: MockEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test-mock-endpoint
+  namespace: dev
+  version: ''
+  tags: []
+  description: ''
+spec:
+  paths: {}

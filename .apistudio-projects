@@ -72,9 +72,9 @@ projects:
     tags: []
     lastUpdated: 1740989599300
   Custom_HTTP_UI:
-    description: ''
+    description: Custom HTTP policy
     tags: []
-    lastUpdated: 1740993354226
+    lastUpdated: 1742792340826
   LB_Routing_UI:
     description: ''
     tags: []

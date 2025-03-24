@@ -117,6 +117,6 @@ projects:
     tags: []
     lastUpdated: 1742543739137
   CreateAPI_scratch:
-    description: ''
+    description: Create an API from scratch.
     tags: []
-    lastUpdated: 1742544114729
+    lastUpdated: 1742792262921

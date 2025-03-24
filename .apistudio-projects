@@ -76,9 +76,9 @@ projects:
     tags: []
     lastUpdated: 1742792340826
   LB_Routing_UI:
-    description: ''
+    description: Routing policy
     tags: []
-    lastUpdated: 1740997868892
+    lastUpdated: 1742792460459
   OutBoundAlias_UI:
     description: OutBoundAlias project for UI
     tags:

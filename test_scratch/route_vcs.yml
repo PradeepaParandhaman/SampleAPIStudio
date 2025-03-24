@@ -1,0 +1,11 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: route_vcs
+  namespace: dev
+  version: "1.0"
+  tags:
+    - test
+    - dev
+spec:
+  default-endpoint: {}

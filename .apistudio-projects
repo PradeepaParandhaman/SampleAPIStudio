@@ -113,9 +113,9 @@ projects:
       - test
     lastUpdated: 1741946546185
   CreateNewAPIInVCS:
-    description: ''
+    description: Create a new API in VCS
     tags: []
-    lastUpdated: 1742543739137
+    lastUpdated: 1742792321711
   CreateAPI_scratch:
     description: Create an API from scratch.
     tags: []

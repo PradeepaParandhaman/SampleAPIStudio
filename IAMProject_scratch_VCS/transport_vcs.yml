@@ -1,0 +1,12 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: transport_vcs
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+spec:
+  protocol:
+    - http
+    - https

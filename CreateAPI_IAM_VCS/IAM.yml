@@ -1,0 +1,21 @@
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: IAM
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+    - 123
+spec:
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: global
+      hostNameAddress:
+        applicationLookup: global
+      httpBasicAuth:
+        applicationLookup: registered
+      ipAddressRange:
+        applicationLookup: registered

@@ -1,0 +1,14 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: policySeq
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: test:transport_test:1.0
+  routing:
+    - $ref: test:Route_VCS_test:1.0
+  iam:
+    - $ref: test:IAM:1.0

@@ -1,0 +1,11 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: transport_test
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  protocol:
+    - http
+    - https

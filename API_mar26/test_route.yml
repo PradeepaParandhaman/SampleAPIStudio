@@ -7,4 +7,4 @@ metadata:
   tags: []
 spec:
   default-endpoint:
-    $ref: dev:default_endpoint:1.0
+    $ref: test:test:1.0

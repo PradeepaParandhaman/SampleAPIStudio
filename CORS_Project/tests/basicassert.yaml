@@ -11,7 +11,7 @@ metadata:
     - test
     - APISample
 spec:
-  - name: Validate the response status2
+  - name: Validate the response status3
     key: code
     value: 200
     action: equals

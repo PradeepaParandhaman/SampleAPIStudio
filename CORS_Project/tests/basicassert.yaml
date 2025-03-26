@@ -11,11 +11,11 @@ metadata:
     - test
     - APISample
 spec:
-  - name: "Validate the response status"
-    key: "code"
+  - name: Validate the response status2
+    key: code
     value: 200
-    action: "equals" 
-  - name: "Less Than the response Time"
-    key: "responseTime"
+    action: equals
+  - name: Less Than the response Time
+    key: responseTime
     value: 1000
-    action: "lessThan"
+    action: lessThan

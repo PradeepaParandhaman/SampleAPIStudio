@@ -28,7 +28,7 @@ spec:
         sslVerification: false
         encodeURL: true
       assertions:
-        $ref: dev:basicassert:alpha
+        $ref: dev_cors:basicassert:alpha
     - method: GET
       resource: /pet/{petid}
       headers:

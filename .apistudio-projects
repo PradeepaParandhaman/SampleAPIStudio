@@ -162,3 +162,7 @@ projects:
       - abc
       - '123'
     lastUpdated: 1742974225418
+  VCSDeploy:
+    description: ''
+    tags: []
+    lastUpdated: 1743009453264

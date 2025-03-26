@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: policy
+  namespace: wxy
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: wxy:transport:1.0
+  routing:
+    - $ref: wxy:routing:1.0

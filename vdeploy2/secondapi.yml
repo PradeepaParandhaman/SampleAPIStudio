@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: secondapi
+  namespace: jkl
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: secondapi-spec.yml
+  policy-sequence:
+    - $ref: jkl:policy:1.0

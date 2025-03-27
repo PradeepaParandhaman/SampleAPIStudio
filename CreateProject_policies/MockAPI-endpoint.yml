@@ -1,0 +1,21 @@
+kind: MockEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MockAPI-endpoint
+  namespace: test
+  version: alpha
+  tags: []
+  description: ''
+spec:
+  paths:
+    /pet:
+      put:
+        defaultResponse:
+          '200':
+            response:
+              $ref: dev:Mock-Response-200:1.0
+        conditionalResponse:
+          - condition: $request.query.name
+            statusCode: 200
+            response:
+              $ref: default:Mock-Response-dggrze:1.0

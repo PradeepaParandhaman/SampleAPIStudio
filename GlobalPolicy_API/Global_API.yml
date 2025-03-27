@@ -1,0 +1,12 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Global_API
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+  type: REST
+spec:
+  api-spec:
+    $path: Global_API-spec.yml

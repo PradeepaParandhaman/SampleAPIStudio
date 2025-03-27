@@ -7,7 +7,10 @@ metadata:
   tags: []
 spec:
   transport:
-    - $ref: dev:transport:1.0
-    - $ref: test:tet_transport:1.0
+    - $ref: dev:transport_test:1.0
   routing:
     - $ref: test_route:test_route:1.0
+  iam:
+    - $ref: sample:authorizeUser:1.0
+    - $ref: iam_host_ip:identify_and_authorize:1.0
+    - $ref: test:IAM:1.0

@@ -9,3 +9,5 @@ metadata:
 spec:
   api-spec:
     $path: test_api_mar27-spec.yml
+  policy-sequence
+    - $ref: test:test_policy:1.0

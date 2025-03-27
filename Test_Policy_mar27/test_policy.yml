@@ -8,6 +8,6 @@ metadata:
     - test
 spec:
   transport:
-    - $ref: test:transport_policy:1
+    - $ref: test:transport_policy:1.0
   routing:
     - $ref: test:test_route_mar27:1.0

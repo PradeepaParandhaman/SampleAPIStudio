@@ -3,7 +3,7 @@ apiVersion: api.webmethods.io/beta
 metadata:
   name: test_route_mar27
   namespace: test
-  version: '1'
+  version: '1.0'
   tags: []
 spec:
   default-endpoint:

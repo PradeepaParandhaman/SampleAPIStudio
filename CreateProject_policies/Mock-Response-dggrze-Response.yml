@@ -9,5 +9,15 @@ metadata:
     - tag2
   description: ''
 spec:
-  headers: []
-  data: []
+  headers:
+    - key: auth
+      value: <token>
+    - key: key
+      value: value
+  data:
+    - contentType: application/json
+      content: "{petid: 1}"
+    - contentType: application/xml
+      content: "petname:
+                    id:1,
+                    name: xyz"

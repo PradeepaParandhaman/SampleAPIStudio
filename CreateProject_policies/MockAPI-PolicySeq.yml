@@ -11,5 +11,4 @@ spec:
     - $ref: test:MockAPI-Route:alpha
   transport:
     - $ref: dev:transport_test:1.0
-  iam:
-    - $ref: dev:IAM:1.0
+

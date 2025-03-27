@@ -5,7 +5,7 @@ metadata:
   namespace: test
   version: alpha
   tags: []
-  description: ''
+  description: 'Mock API for updating pet details'
 spec:
   paths:
     /pet:
@@ -15,7 +15,7 @@ spec:
             response:
               $ref: dev:Mock-Response-200:1.0
         conditionalResponse:
-          - condition: $request.query.name
+          - condition: $request.query.name != null
             statusCode: 200
             response:
               $ref: default:Mock-Response-dggrze:1.0

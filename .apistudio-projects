@@ -162,11 +162,3 @@ projects:
       - abc
       - '123'
     lastUpdated: 1742974225418
-  dprj:
-    description: ''
-    tags: []
-    lastUpdated: 1743029760660
-  finalvcsdeploy:
-    description: ''
-    tags: []
-    lastUpdated: 1743035764860

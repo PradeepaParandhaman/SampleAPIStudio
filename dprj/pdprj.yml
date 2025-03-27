@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: pdprj
+  namespace: dprj
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: dprj:tdprj:1.0
+  routing:
+    - $ref: dprj:sdprj:1.0

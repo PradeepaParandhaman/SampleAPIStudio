@@ -8,9 +8,14 @@ metadata:
 spec:
   transport:
     - $ref: dev:transport_test:1.0
+    - $ref: test:enable_https:1.0
   routing:
     - $ref: test_route:test_route:1.0
+    - $ref: test:Routing_2:1.0
   iam:
     - $ref: sample:authorizeUser:1.0
     - $ref: iam_host_ip:identify_and_authorize:1.0
     - $ref: test:IAM:1.0
+    - $ref: dev:IAM_test:1.0
+  monitoring:
+    - $ref: scope:log_invocation:1.0

@@ -11,7 +11,7 @@ metadata:
   namespace: iam_host_ip
 spec:
   api:
-    $ref: test:API_mar26:1.0
+    $endpoint: "http://daso.dev.fyre.ibm.com:5555/gateway/API_mar26/1.0"
   environment:
     $ref: iam_host_ip:env:alpha
   request:

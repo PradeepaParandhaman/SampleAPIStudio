@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ZDeploy
+  namespace: vdply
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ZDeploy-spec.yml
+  policy-sequence:
+    - $ref: vdply:policy:1.0

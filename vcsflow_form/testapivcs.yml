@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testapivcs_edit
+  namespace: test
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: testapivcs-spec.yml
+  policy-sequence:
+    - $ref: testvcs:policyvcs:1.0

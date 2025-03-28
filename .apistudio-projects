@@ -104,14 +104,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1741089146924
-  CreateEmptyProjectInVcs_UI:
-    description: This is a project created in VCS from Project Listing page
-    tags:
-      - listing
-      - vcs
-      - empty_project
-      - test
-    lastUpdated: 1741946546185
   CreateNewAPIInVCS:
     description: Create a new API in VCS
     tags: []

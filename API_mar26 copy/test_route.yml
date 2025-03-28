@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_route
+  namespace: test_route
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: test:test_endpoint:alpha

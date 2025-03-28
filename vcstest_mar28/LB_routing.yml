@@ -1,0 +1,15 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: LB_routing
+  namespace: testvcs
+  version: '1.0'
+  tags:
+    - test
+    - vcs
+spec:
+  loadbalance-endpoints:
+    - $ref: dev:lb_test:1.0
+      suspend-on-duration: 30s
+    - $ref: test:test_endpoint:1.0
+      suspend-on-duration: 30s

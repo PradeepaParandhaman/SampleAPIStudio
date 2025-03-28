@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_endpoint
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  url: http://localhost:3000
+  method: GET
+  connectTimeout: 200
+  readTimeout: 90

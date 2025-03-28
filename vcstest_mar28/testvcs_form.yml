@@ -1,0 +1,23 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testvcs_form
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+spec:
+  api:
+    $ref: 'test:vcs_mar28:1.0'
+  environment:
+    $ref: 'vcsenv:env_vcs:1.0'
+  request:
+    - method: GET
+      resource: /pet/11
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        noauth: true
+      assertions:
+        $ref: "vcs28:assert_vcs:1.0"

@@ -1,0 +1,11 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_route_vcs
+  namespace: vcsflow
+  version: '1.0'
+  tags:
+    - test
+spec:
+  default-endpoint:
+    $ref: test:test_endpoint:1.0

@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: vcsPolicySeq_mar28
+  namespace: vcs
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: vcstest:trnsport_vcs:1.0
+  routing:
+    - $ref: vcsflow:test_route_vcs:1.0

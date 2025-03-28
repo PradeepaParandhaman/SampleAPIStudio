@@ -1,0 +1,17 @@
+kind: assertion
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: assert_vcs
+  namespace: vcs28
+  version: '1.0'
+  tags:
+    - test
+spec:
+  - name: Validate the response status
+    key: code
+    action: equals
+    value: "200"
+  - name: Less Than the response Time
+    key: responseTime
+    action: lessThan
+    value: "1000"

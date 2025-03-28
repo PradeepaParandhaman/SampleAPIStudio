@@ -14,4 +14,4 @@ spec:
     - $ref: testvcs:IAMvcs:1.0
   monitoring:
     - $ref: log:log_invocation:1.0
-    - $ref: monitor:Monitortraffic:1.0
+    - $ref: devvcs:serviceresult:1.0

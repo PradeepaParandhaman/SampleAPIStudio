@@ -139,10 +139,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1742883774625
-  CreateAPI_IAM_VCS:
-    description: ''
-    tags: []
-    lastUpdated: 1742894405254
   dummyVCS:
     description: ''
     tags: []

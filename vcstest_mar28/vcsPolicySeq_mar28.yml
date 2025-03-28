@@ -10,3 +10,7 @@ spec:
     - $ref: vcstest:trnsport_vcs:1.0
   routing:
     - $ref: vcsflow:test_route_vcs:1.0
+  iam:
+    - $ref: testvcs:IAMvcs:1.0
+  monitoring:
+    - $ref: log:log_invocation:1.0

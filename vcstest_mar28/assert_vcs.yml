@@ -10,7 +10,7 @@ spec:
   - name: Validate the response status
     key: code
     action: equals
-    value: "200"
+    value: "500"
   - name: Less Than the response Time
     key: responseTime
     action: lessThan

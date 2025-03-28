@@ -1,0 +1,17 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  namespace: log
+  version: '1.0'
+  tags:
+    - test
+spec:
+  logRequestHeaders: true
+  logRequestPayload: true
+  logResponseHeaders: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: onfailure
+  destination:
+    - api_gateway

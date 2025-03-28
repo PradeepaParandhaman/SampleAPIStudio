@@ -8,10 +8,9 @@ metadata:
     - test
 spec:
   applications:
-    - app1
-    - app2
+    - test
   alert-configuration:
-    interval: 2m
+    interval: 3m
     frequency: always
     message: test
   notify-on-breach:

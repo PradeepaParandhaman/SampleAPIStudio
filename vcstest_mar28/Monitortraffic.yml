@@ -1,0 +1,20 @@
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Monitortraffic
+  namespace: monitor
+  version: '1.0'
+  tags:
+    - test
+spec:
+  applications:
+    - app1
+    - app2
+  alert-configuration:
+    interval: 2m
+    frequency: always
+    message: test
+  notify-on-breach:
+    - email:
+        - Pradeepa.Parandhaman@ibm.com
+  condition: ${fault-count} equals 10

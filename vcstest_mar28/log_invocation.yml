@@ -8,8 +8,8 @@ metadata:
     - test
 spec:
   logRequestHeaders: true
-  logRequestPayload: true
-  logResponseHeaders: true
+  logRequestPayload: false
+  logResponseHeaders: false
   logResponsePayload: true
   compressPayloads: true
   logGenerationFrequency: onfailure

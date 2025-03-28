@@ -120,10 +120,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1742883774625
-  dummyVCS:
-    description: ''
-    tags: []
-    lastUpdated: 1742911618513
   FormView_VCS:
     description: ''
     tags: []

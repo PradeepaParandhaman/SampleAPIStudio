@@ -108,10 +108,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1742814525107
-  test_448_vcs:
-    description: ''
-    tags: []
-    lastUpdated: 1742815103677
   IAMProject_scratch_VCS:
     description: ''
     tags: []
@@ -194,3 +190,7 @@ projects:
       - abc
       - '123'
     lastUpdated: 1743176180581
+  test_448_vcs_test:
+    description: ''
+    tags: []
+    lastUpdated: 1743178551882

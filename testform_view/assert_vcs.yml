@@ -1,0 +1,14 @@
+kind: assertion
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: assert_vcs
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+    - vcs
+spec:
+  - name: response
+    key: code
+    action: notEquals
+    value: "200"

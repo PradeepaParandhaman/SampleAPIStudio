@@ -10,7 +10,7 @@ spec:
   api:
     $ref: 'test:vcs_mar28:1.0'
   environment:
-    $ref: 'vcsenv:env_vcs:1.0'
+    $ref: 'dev_cors:env:alpha'
   request:
     - method: GET
       resource: /pet/11

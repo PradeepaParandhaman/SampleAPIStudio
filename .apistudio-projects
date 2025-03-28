@@ -112,13 +112,6 @@ projects:
     description: Create an API from scratch.
     tags: []
     lastUpdated: 1742792262921
-  CreateAPIScratch_VCS:
-    description: ''
-    tags:
-      - test
-      - vcs
-      - projects
-    lastUpdated: 1742802957413
   test_scratch:
     description: ''
     tags: []

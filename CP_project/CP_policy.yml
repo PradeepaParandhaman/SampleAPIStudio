@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: CP_policy
+  namespace: testtest
+  version: '1.0'
+  tags: []
+spec:
+  routing:
+    - $ref: test:test_policy:1.0
+  transport:
+    - $ref: test_1:transport_apr1:1.0

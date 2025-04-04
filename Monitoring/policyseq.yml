@@ -1,0 +1,26 @@
+kind: policySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: dev_policies
+  version: 1
+  namespace: dev
+  tags:
+    - dev_policies
+spec:
+  transport:
+    - $ref: dev:enable_https:1.0
+  iam:
+    - $ref: dev:identify_and_authorize:1.0
+  req-processing:
+    - $ref: beta:validate_API_Specification_policy:1.0
+    - $ref: dev:request-processing-policy:1.0
+  monitoring:
+    - $ref: beta:log_invocation:1.0
+    - $ref: beta:monitor:1.0
+    - $ref: beta:monitorPerf:1.0
+    - $ref: sample:rate-limiter:1.0
+    - $ref: sample:service_cache:1.0
+  routing:
+    - $ref: dev:my-default-routing:1.0
+  res-processing:
+    - $ref: beta:response-processing-policy:1.0

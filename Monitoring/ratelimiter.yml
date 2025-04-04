@@ -1,0 +1,23 @@
+
+kind: RateLimiter
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: rate-limiter
+  version: 1
+  namespace: sample
+  tags:
+    - traffic_optimization
+spec:
+  enabled: true
+  maxLimit: 20
+  applications:
+    - AllConsumers
+  applicationSpecific: true
+  alert-configuration:
+    interval: 2m
+    frequency: always
+    message: Throtting reached!
+  destinations:
+    - email:
+        - nas@sag.com
+        - daso@sag.com

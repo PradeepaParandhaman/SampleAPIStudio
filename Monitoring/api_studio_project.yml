@@ -1,0 +1,351 @@
+kind: api
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: DasoAPI
+  namespace: dev
+  version: 1.0
+  tags:
+    - swagger
+    - daso
+    - sample
+  type: REST
+spec:
+  api-spec:
+    $path: petstore.yml
+  policy-sequence: 
+    - $ref: dev:dev_policies:1.0
+---
+kind: policySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: dev_policies
+  version: 1.0
+  namespace: dev
+  tags:
+    - dev_policies
+spec:
+  transport:
+    - $ref: dev:enable_https:1.0
+  iam:
+    - $ref: dev:identify_and_authorize:1.0
+  req-processing:
+    - $ref: beta:validate_API_Specification_policy:1.0
+    - $ref: dev:request-processing-policy:1.0
+  monitoring:
+   - $ref: beta:log_invocation:1.0
+   - $ref: beta:monitor:1.0
+   - $ref: beta:monitorPerf:1.0
+   - $ref: sample:rate-limiter:1.0
+   - $ref: sample:service_cache:1.0
+  routing:
+    - $ref: dev:my-default-routing:1.0
+  res-processing:
+    - $ref: beta:response-processing-policy:1.0
+
+  # # error-handling:
+  #   - $ref: error-handling-policy:1.0
+---
+kind: Transport
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: enable_https
+  namespace: dev
+  version: 1.0
+spec: 
+    protocol:
+      - http
+      - https
+---
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: my-default-routing
+  version: 1.0
+  namespace: dev
+  tags:
+    - routing
+    - route
+    - policy
+spec:
+  default-endpoint:
+    $ref: dev:default_endpoint:1.0
+---
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: identify_and_authorize
+  version: 1.0
+  namespace: dev
+  tags:
+    - identify_and_authorize
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: global
+      hostNameAddress:
+        applicationLookup: registered
+      httpBasicAuth:
+        applicationLookup: registered
+      ipAddressRange:
+        applicationLookup: registered
+      jwt:
+        applicationLookup: registered
+      openIdConnect:
+        applicationLookup: registered
+      sslCertificate:
+        applicationLookup: registered
+      httpHeaders:
+        applicationLookup: registered
+      payloadElement:
+        applicationLookup: registered
+        payLoadIdentifier:
+          - jPath: $.a.b
+          - xPath: 123456
+            namespaces:
+              - prefix: ps1
+                URI: http://test.com
+              - prefix: ps2
+                URI: http://test.com
+          - regex: $.a.b
+      kerberosToken:
+        applicationLookup: registered
+        servicePrincipalName: http://localhost:5555
+        servicePrincipalPassword: 123456
+      oAuth2Token:
+---
+kind: TransformRequest
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: request-processing-policy
+  version: 1.0
+  namespace: dev
+  tags:
+    - iden
+spec:
+  transformations:
+    set:
+      - key: ${request.headers.authorization}
+        value: ${request.authorization.authHeader}
+spec:
+  condition: (${request.headers.test} equals test1) or (${request.headers.test}
+    notEquals ${request.payload.jsonPath[$.customer.name]})
+  transformations:
+    set:
+      - key: ${request.headers.h2}
+        value: test-header-value
+      - key: ${request.query.q2}
+        value: ${request.path.name}
+    setPayload:
+      content-types:
+        - application/xml: <test></test>
+      xsl:
+        - $path: format.xsl
+    remove:
+      - ${request.query.q1}
+      - ${request.path.mki}
+    namespaces:
+      - prefix: ps1
+        URI: http://test.com
+      - prefix: ps2
+        URI: http://test2.com
+---
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: default_endpoint
+  version: 1.0
+  namespace: dev
+spec:
+  url: ${pet_url_alias}  
+  method: GET
+  connectTimeout: 300
+  readTimeout: 200
+  sslConfig:
+    keyStoreAlias: DEFAULT_IS_KEYSTORE
+    keyAlias: ssos
+    trustStoreAlias: DEFAULT_IS_TRUSTSTORE
+  serviceRegistryParameters:
+    - name: ""
+      value: ""
+---
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  version: 1.0
+  namespace: beta
+  tags:
+    - log_invocation
+spec:
+  enabled: true
+  logRequestHeaders: true # default value = false
+  logResponseHeaders: true # default value = false
+  logRequestPayload: true # default value = false
+  logResponsePayload: true # default value = false
+  compressPayloads: true # default value = false
+  logGenerationFrequency: always
+  destination:
+    - self 
+    - dev_portals:
+      - devportal 1 #name of the portal instance in the gateway
+    - email:
+      - nas@sag.com
+      - daso@sag.com
+---
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: monitor
+  version: 1.0
+  namespace: beta
+  tags:
+    - monitor
+spec:
+  condition: "${faultCount} equals 10 and ${avgResponseTime} greaterThan 10 and ${requestCount} lessThan 100"
+  applications:
+      - d6d9d492-8ff7-4e59-9fc2-c53c8615f29f
+      - 0b8e17fc-352c-4b5a-a0af-47a5f78e9486
+  alert-configuration:
+    interval: 2cw
+    frequency: 'always' 
+    message: 'Throtting reached!'
+  notify-on-breach:
+    - self
+    - dev_portals :
+      - portal 1
+      - portal 2
+    - email:
+      - nas@sag.com
+      - daso@sag.com
+    - snmp
+    - jdbc
+    - log-file:
+        level: Info
+---
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: monitorPerf
+  version: 1.0
+  namespace: beta
+  tags:
+    - monitorPerformance
+spec:
+  condition: "${availability} equals 10 and ${avgResponseTime} greaterThan 10 and ${requestCount} lessThan 100"
+  alert-configuration:
+    interval: 2cm
+    frequency: once
+    message: 'MonitorPerformance message'
+  notify-on-breach:
+    - self
+    - dev_portals :
+      - portal 1
+      - portal 2
+    - email:
+      - test1@sag.com
+      - test2@sag.com
+    - snmp
+    - jdbc
+    - log-file:
+        level: Error
+---
+kind: RateLimiter
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: rate-limiter
+  version: 1.0
+  namespace: sample
+  tags:
+    - traffic_optimization
+spec:
+  enabled: true
+  maxLimit: 20
+  applications:
+      - AllConsumers 
+  applicationSpecific: true
+  alert-configuration:
+    interval: 2m
+    frequency: always
+    message: Throtting reached!
+  destinations:
+    - self
+    - dev_portals :
+      - portal 1
+      - portal 2
+    - email:
+      - nas@sag.com
+      - daso@sag.com
+    - snmp
+    - jdbc
+    - log-file:
+        level: Info
+---
+kind: CacheServiceResult
+apiVersion: api.webmethods.io/beta
+metadata:
+    name: service_cache
+    version: 1.0
+    namespace: sample
+    tags:
+        - cache
+        - service
+        - result
+        - monitoring
+        - policy
+spec:
+  condition: (${request.headers.test} equals test1) and (${request.headers.test} equals test2) and (${request.query.test1} equals test1) and (${request.query.test2} equals test2)
+  ttl: 4d
+  enabled: true
+  maxSize: 32kb
+---
+kind: ValidateAPISpecification
+apiVersion: api.webmethods.io/beta
+metadata:
+  namespace: beta
+  name: validate_API_Specification_policy
+  version: 1.0
+spec:
+  validate:
+    - query
+    - path
+    - cookie
+    - contentType
+    - headers:
+        condition: (${request.headers.test} equals test1) or (${request.headers.test})
+    - schema:
+        feature:
+          - name: TOLERATE_DUPLICATES
+            value: true
+          - name: DISALLOW_DOCTYPE
+            value: false
+---
+kind: TransformResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  namespace: beta
+  name: response-processing-policy
+  version: 1.0
+spec:
+  condition: (${response.headers.name} equals svis)
+  transformations:
+    set:
+      - key: ${response.headers.h2}
+        value: test-header-value
+    setStatus: # Introduced for Response Processing
+       code: 400
+       message: Invalid request
+    setPayload:
+      content-types:
+        - application/xml: <test></test>
+      xsl:
+        - $path: format.xsl
+    remove:
+      - ${response.headers.name}
+    namespaces:
+      - prefix: ps1
+        URI: http://test.com
+      - prefix: ps2
+        URI: http://test2.com

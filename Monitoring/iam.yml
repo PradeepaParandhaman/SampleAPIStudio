@@ -1,0 +1,44 @@
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: identify_and_authorize
+  version: 1
+  namespace: dev
+  tags:
+    - identify_and_authorize
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: global
+      hostNameAddress:
+        applicationLookup: registered
+      httpBasicAuth:
+        applicationLookup: registered
+      ipAddressRange:
+        applicationLookup: registered
+      jwt:
+        applicationLookup: registered
+      openIdConnect:
+        applicationLookup: registered
+      sslCertificate:
+        applicationLookup: registered
+      httpHeaders:
+        applicationLookup: registered
+      payloadElement:
+        applicationLookup: registered
+        payLoadIdentifier:
+          - jPath: $.a.b
+          - xPath: 123456
+            namespaces:
+              - prefix: ps1
+                URI: http://test.com
+              - prefix: ps2
+                URI: http://test.com
+          - regex: $.a.b
+      kerberosToken:
+        applicationLookup: registered
+        servicePrincipalName: http://localhost:5555
+        servicePrincipalPassword: 123456

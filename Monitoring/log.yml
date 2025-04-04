@@ -1,0 +1,20 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  version: 1
+  namespace: beta
+  tags:
+    - log_invocation
+spec:
+  enabled: true
+  logRequestHeaders: true
+  logResponseHeaders: true
+  logRequestPayload: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: always
+  destination:
+    - email:
+        - nas@sag.com
+        - daso@sag.com

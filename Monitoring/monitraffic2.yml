@@ -1,0 +1,20 @@
+
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: monitorPerf
+  version: 1
+  namespace: beta
+  tags:
+    - monitorPerformance
+spec:
+  condition: ${availability} equals 10 and ${avgResponseTime} greaterThan 10 and
+    ${requestCount} lessThan 100
+  alert-configuration:
+    interval: 2cm
+    frequency: once
+    message: MonitorPerformance message
+  notify-on-breach:
+    - email:
+        - test1@sag.com
+        - test2@sag.com

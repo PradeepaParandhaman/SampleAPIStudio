@@ -1,0 +1,23 @@
+
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: monitor
+  version: 1
+  namespace: beta
+  tags:
+    - monitor
+spec:
+  condition: ${faultCount} equals 10 and ${avgResponseTime} greaterThan 10 and
+    ${requestCount} lessThan 100
+  applications:
+    - d6d9d492-8ff7-4e59-9fc2-c53c8615f29f
+    - 0b8e17fc-352c-4b5a-a0af-47a5f78e9486
+  alert-configuration:
+    interval: 2cw
+    frequency: always
+    message: Throtting reached!
+  notify-on-breach:
+    - email:
+        - nas@sag.com
+        - daso@sag.com

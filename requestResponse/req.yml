@@ -1,0 +1,25 @@
+kind: TransformRequest
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: req
+  namespace: sample
+  version: '1.0'
+  tags: []
+spec:
+  condition: >-
+    (${request.headers.test} equals test1) or (${request.headers.test} notEquals
+    ${request.payload.jsonPath[$.customer.name]})
+  transformations:
+    set:
+      - key: ${request.headers.authorization}
+        value: ${request.authorization.authHeader}
+      - key: ${request.headers.h2}
+        value: test-header-value
+    remove:
+      - ${request.query.q1}
+    namespaces:
+      - prefix: ps1
+        URI: http://test.com
+    setPayload:
+      content-types:
+        - application/xml: <test></test>

@@ -1,0 +1,16 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: policyseq
+  namespace: sample
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: sample:transport:1.0
+  routing:
+    - $ref: sample:strtroute:1.0
+  req_processing:
+    - $ref: sample:req:1.0
+  res_processing:
+    - $ref: sample:response:1.0

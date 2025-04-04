@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: reqresapi
+  namespace: sample
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: api-spec.yml
+  policy-sequence:
+    - $ref: sample:policyseq:1.0

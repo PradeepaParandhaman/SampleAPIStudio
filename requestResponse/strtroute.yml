@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: strtroute
+  namespace: sample
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: sample:endpoint:1.0

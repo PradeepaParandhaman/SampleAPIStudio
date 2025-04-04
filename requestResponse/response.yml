@@ -1,0 +1,24 @@
+kind: TransformResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: response
+  namespace: sample
+  version: '1.0'
+  tags: []
+spec:
+  condition: (${response.headers.name} equals svis)
+  transformations:
+    set:
+      - key: ${response.headers.h2}
+        value: test-header-value
+    remove:
+      - ${response.headers.name}
+    setPayload:
+      content-types:
+        - application/xml: <xml>
+    setStatus:
+      code: '400'
+      message: Invalid request
+    namespaces:
+      - prefix: ps2
+        URI: http://test2.com

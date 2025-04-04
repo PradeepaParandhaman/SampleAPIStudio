@@ -1,0 +1,10 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ep10
+  namespace: ep15
+  version: test
+  tags: []
+spec:
+  url: http://localhost:3000
+  method: CUSTOM

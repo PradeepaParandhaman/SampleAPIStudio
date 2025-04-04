@@ -1,0 +1,15 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MonitoringPolicySeq
+  namespace: seq
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: tns:transport:1.0
+  monitoring:
+    - $ref: log:Log:1.0
+    - $ref: traffic:MonitorTraffic:1.0
+  routing:
+    - $ref: test:route_monitor:1.0

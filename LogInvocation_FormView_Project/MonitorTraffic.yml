@@ -1,0 +1,17 @@
+kind: MonitorTraffic
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MonitorTraffic
+  namespace: traffic
+  version: '1.0'
+  tags: []
+spec:
+  condition: '${fault-count} equals 10 '
+  applications:
+    - app1
+  alert-configuration:
+    interval: 2m
+    message: Throttling set
+  notify-on-breach:
+    - email:
+        - Pradeepa.Parandhaman@ibm.com

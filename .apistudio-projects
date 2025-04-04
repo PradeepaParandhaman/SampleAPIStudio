@@ -204,9 +204,9 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743759548902
-  vmmTest:
+  vmmTest2:
     description: dsad
     tags:
       - api
       - apigw
-    lastUpdated: 1743767596499
+    lastUpdated: 1743767612791

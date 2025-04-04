@@ -1,0 +1,14 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ContentRouting_API_test
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+  type: REST
+spec:
+  api-spec:
+    $path: ContentRouting_API_test-spec.yml
+  policy-sequence:
+    - $ref: content:ContentPolicy:1.0

@@ -1,0 +1,14 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ContentPolicy
+  namespace: content
+  version: '1.0'
+  tags:
+    - test
+spec:
+  transport:
+    - $ref: dev:trnsport:1.0
+  routing:
+    - $ref: test:Content:1.0
+    - $ref: test:ConditionalRouting:1.0

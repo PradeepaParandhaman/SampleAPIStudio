@@ -1,0 +1,15 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Content
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: test:ep5:alpha
+  content-based-endpoints:
+    - endpoint:
+        $ref: test:ep5:alpha
+      payLoadIdentifier:
+        jPath: '''$.pet.name'''

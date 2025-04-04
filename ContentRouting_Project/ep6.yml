@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ep6
+  namespace: test
+  version: alpha
+  tags: []
+spec:
+  url: http://localhost:4000
+  connectTimeout: 2
+  readTimeout: 2
+  method: CUSTOM

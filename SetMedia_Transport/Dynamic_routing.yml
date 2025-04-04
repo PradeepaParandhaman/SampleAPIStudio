@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Dynamic_routing
+  namespace: dynamic
+  version: '1.0'
+  tags:
+    - test
+spec:
+  default-endpoint:
+    $ref: dynamic:dynmanic_endpoint:alpha
+  dynamic-endpoints: {}

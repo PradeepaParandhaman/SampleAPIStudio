@@ -1,0 +1,13 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: PolicySeq_test
+  namespace: test_policy
+  version: '1.0'
+  tags:
+    - policy
+spec:
+  transport:
+    - $ref: test:SetMediaType:1.0
+  routing:
+    - $ref: dynamic:Dynamic_routing:1.0

@@ -1,0 +1,10 @@
+kind: SetMediaType
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SetMediaType
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  defaultContentType: ${request.path}
+  defaultAcceptHeader: ${request.httpMethod}

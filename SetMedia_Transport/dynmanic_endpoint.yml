@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: dynmanic_endpoint
+  namespace: dynamic
+  version: alpha
+  tags: []
+spec:
+  url: http://test.com
+  method: GET
+  connectTimeout: 20
+  readTimeout: 3

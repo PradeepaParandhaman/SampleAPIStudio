@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SetMediaType_API_FormView
+  namespace: policy
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: SetMediaType_API_FormView-spec.yml
+  policy-sequence:
+    - $ref: test_policy:PolicySeq_test:1.0

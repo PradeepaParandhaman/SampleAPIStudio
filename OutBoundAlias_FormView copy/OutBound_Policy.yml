@@ -1,0 +1,13 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: OutBound_Policy
+  namespace: out
+  version: '1.0'
+  tags:
+    - test
+spec:
+  transport:
+    - $ref: test:transport:1.0
+  routing:
+    - $ref: alias:OutAlias:1.0

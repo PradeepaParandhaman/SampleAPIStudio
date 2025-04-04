@@ -1,0 +1,10 @@
+kind: OutboundAlias
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: OutAlias
+  namespace: alias
+  version: '1.0'
+  tags:
+    - test
+spec:
+  alias: '{testalias}'

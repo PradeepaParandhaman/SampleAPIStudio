@@ -1,7 +1,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: ContentRouting_API_test
+  name: ContentRouting_API_test-00
   namespace: test
   version: '1.0'
   tags:

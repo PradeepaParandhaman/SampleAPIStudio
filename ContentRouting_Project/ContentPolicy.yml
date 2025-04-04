@@ -11,4 +11,3 @@ spec:
     - $ref: dev:trnsport:1.0
   routing:
     - $ref: test:Content:1.0
-    - $ref: test:ConditionalRouting:1.0

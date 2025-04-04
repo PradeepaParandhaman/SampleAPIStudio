@@ -9,7 +9,7 @@ spec:
   default-endpoint:
     $ref: test:ep5:alpha
   content-based-endpoints:
-    - endpoint:
+    - payLoadIdentifier:
+        jPath: $.pet.name
+      endpoint:
         $ref: test:ep5:alpha
-      payLoadIdentifier:
-        jPath: '''$.pet.name'''

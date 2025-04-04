@@ -1,0 +1,13 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: PolicySequence_test
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+spec:
+  transport:
+    - $ref: message:InboundMessage:1.0
+  routing:
+    - $ref: pol:test_route_policy:1.0

@@ -1,0 +1,23 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_sanity
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+spec:
+  api:
+    $ref: 'test:testapivcs_edit:1.0'
+  environment:
+    $ref: 'test:testenv:1.0'
+  request:
+    - method: GET
+      resource: /pet/10
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        noauth: true
+      assertions:
+        $ref: "iam_host_ip:basicassert:alpha"

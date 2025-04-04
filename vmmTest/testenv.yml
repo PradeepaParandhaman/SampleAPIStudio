@@ -1,0 +1,10 @@
+kind: environment
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testenv
+  namespace: test
+  version: '1.0'
+  tags:
+    - test
+spec:
+  variables: []

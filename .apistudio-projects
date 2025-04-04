@@ -178,10 +178,6 @@ projects:
       - empty_project
       - test
     lastUpdated: 1743210538269
-  FinalRC_assert_apr1:
-    description: ''
-    tags: []
-    lastUpdated: 1743489395533
   test_linting:
     description: ''
     tags: []

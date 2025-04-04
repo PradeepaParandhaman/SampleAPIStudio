@@ -1,0 +1,14 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: InboundAPI_Test
+  namespace: test_route
+  version: '1.0'
+  tags:
+    - test
+  type: REST
+spec:
+  api-spec:
+    $path: RoutingAPI-spec.yml
+  policy-sequence:
+    - $ref: policy:PolicySequence:1.0

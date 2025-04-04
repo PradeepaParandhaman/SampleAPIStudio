@@ -1,0 +1,14 @@
+kind: InboundBulkHead
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: inbound_transport
+  namespace: policy
+  version: '1.0'
+  tags:
+    - test
+spec:
+  maxConcurrentCalls: '20'
+  enableBulkheadForCallbacks:
+    maxConcurrentCallbacks: '30'
+  retryAfterResponseHeader:
+    retryAfterValue: '100'

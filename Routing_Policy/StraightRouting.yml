@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: StraightRouting
+  namespace: policy
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: policy:ep_apr4:alpha

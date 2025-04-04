@@ -1,0 +1,11 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Routing_test
+  namespace: route
+  version: '1.0'
+  tags:
+    - test
+spec:
+  default-endpoint:
+    $ref: test:epapr4_test:alpha

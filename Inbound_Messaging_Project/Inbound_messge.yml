@@ -1,0 +1,17 @@
+kind: InboundMessaging
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Inbound_messge
+  namespace: message
+  version: '1.0'
+  tags:
+    - test
+spec:
+  alias: http://localhost:3000
+  source:
+    - name: test
+      type: QUEUE
+      contentType: ''
+      httpMethod: GET
+      resource: /pet/Id
+      selector: []

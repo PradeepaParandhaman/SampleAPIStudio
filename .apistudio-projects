@@ -100,10 +100,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1741080070447
-  TrafficMonitoring_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741089146924
   test_scratch:
     description: ''
     tags: []
@@ -120,10 +116,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1742914158490
-  Vdeploy:
-    description: ''
-    tags: []
-    lastUpdated: 1743043092495
   test_mar27:
     description: ''
     tags: []
@@ -132,10 +124,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743057997952
-  test_VCSissue:
-    description: ''
-    tags: []
-    lastUpdated: 1743061196516
   test_FormView_VCS:
     description: ''
     tags: []
@@ -164,18 +152,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743088689468
-  vcsflow_form:
-    description: ''
-    tags: []
-    lastUpdated: 1743091334577
-  vcstest_mar28:
-    description: ''
-    tags: []
-    lastUpdated: 1743139884874
-  testform_view:
-    description: ''
-    tags: []
-    lastUpdated: 1743166196861
   API_mar26 copy:
     description: ''
     tags:
@@ -194,10 +170,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743178551882
-  testFinal:
-    description: ''
-    tags: []
-    lastUpdated: 1743181252453
   CreateEmptyProjectInVcs_UI:
     description: This is a project created in VCS from Project Listing page
     tags:

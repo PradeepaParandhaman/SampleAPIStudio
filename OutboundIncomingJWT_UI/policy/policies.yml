@@ -59,12 +59,3 @@ spec:
   serviceRegistryParameters:
     - name: ""
       value: ""
----
-kind: OutboundIncomingJWT  
-apiVersion: api.webmethods.io/beta
-metadata:
-  name: OutboundIncomingJWT
-  version: 1.0
-  namespace: sample  
-spec:
-  enabled: true

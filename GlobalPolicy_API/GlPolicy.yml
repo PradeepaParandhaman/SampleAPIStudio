@@ -13,5 +13,5 @@ spec:
     - GET
     - PUT
   policy-sequence:
-    - $ref:  GlobalPolicy_API:test_policy:1.0
-  filter-attributes: (${apiName} endsWith Sample) and (${apiVersion} equals 1.0) and
+    - $ref: GlobalPolicy_API:test_policy:1.0
+  filter-attributes: (${apiName} endsWith Sample) and (${apiVersion} equals 1.0)

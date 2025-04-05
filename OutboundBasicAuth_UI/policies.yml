@@ -59,13 +59,3 @@ spec:
   serviceRegistryParameters:
     - name: ""
       value: ""
----
-kind: OutboundBasicAuth  
-apiVersion: api.webmethods.io/beta
-metadata:
-  name: OutboundBasicAuth
-  version: 1.0
-  namespace: sample  
-spec:
-  enabled: true
-  use_incoming_credentials: true

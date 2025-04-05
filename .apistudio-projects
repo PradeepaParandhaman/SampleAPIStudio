@@ -170,14 +170,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743178551882
-  CreateEmptyProjectInVcs_UI:
-    description: This is a project created in VCS from Project Listing page
-    tags:
-      - listing
-      - vcs
-      - empty_project
-      - test
-    lastUpdated: 1743210538269
   test_linting:
     description: ''
     tags: []

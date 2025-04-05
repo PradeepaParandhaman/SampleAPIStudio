@@ -1,0 +1,15 @@
+kind: OutboundKerberosAuth  
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: OutboundKerberosAuth
+  version: 1.0
+  namespace: sample  
+  tags:
+    - test
+spec:
+  enabled: true
+  use_custom_credentials:
+    client_principal: clientprincipal
+    client_password: 123456
+    service_principal: serviceprinciple
+    service_principal_nameform: Username

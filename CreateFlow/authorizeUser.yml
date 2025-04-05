@@ -1,0 +1,15 @@
+kind: AuthorizeUser
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: authorizeUser
+  namespace: CreateFlow
+  version: '1.0'
+  tags: []
+spec:
+  users:
+    - default
+    - administrator
+  groups:
+    - Everybody
+  teams:
+    - default

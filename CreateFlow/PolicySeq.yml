@@ -1,0 +1,14 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: PolicySeq
+  namespace: CreateFlow
+  version: '1.0'
+  tags:
+    - test
+spec:
+  transport:
+    - $ref: CreateFlow:transport:1.0
+  iam: []
+  routing:
+    - $ref: CreateFlow:test_route:1.0

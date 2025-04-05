@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Endpoint-c1f07c
+  namespace: default
+  version: '1.0'
+  tags: []
+spec:
+  method: CUSTOM
+  url: http://localhost:3000
+  connectTimeout: 100
+  readTimeout: 3

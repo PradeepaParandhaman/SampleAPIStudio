@@ -1,0 +1,14 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: createFlowfix_API
+  namespace: CreateFlow
+  version: '1.0'
+  tags:
+    - test
+  type: REST
+spec:
+  api-spec:
+    $path: createFlowfix_API-spec.json
+  policy-sequence:
+    - $ref: CreateFlow:PolicySeq:1.0

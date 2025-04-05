@@ -1,0 +1,13 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_policy
+  namespace: GlobalPolicy_API
+  version: '1.0'
+  tags:
+    - test
+spec:
+  transport:
+    - $ref: GlobalPolicy_API:transport:1.0
+  routing:
+    - $ref: GlobalPolicy_API:test_route:1.0

@@ -10,3 +10,5 @@ metadata:
 spec:
   api-spec:
     $path: Global_API-spec.yml
+  policy-sequence:
+    - $ref: GlobalPolicy_API:test_policy:1.0

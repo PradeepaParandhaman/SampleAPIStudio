@@ -1,7 +1,7 @@
 kind: GlobalPolicy
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: GlPolicy
+  name: GlPolicy_apr5
   namespace: test
   version: '1.0'
   tags:
@@ -13,5 +13,5 @@ spec:
     - GET
     - PUT
   policy-sequence:
-    - $ref: test:policySeq:1.0
+    - $ref:  GlobalPolicy_API:test_policy:1.0
   filter-attributes: (${apiName} endsWith Sample) and (${apiVersion} equals 1.0) and

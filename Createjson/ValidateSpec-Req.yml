@@ -1,0 +1,16 @@
+kind: ValidateAPISpecification
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ValidateSpec-Req
+  namespace: Createjson
+  version: '1.0'
+  tags: []
+spec:
+  validate:
+    - schema:
+        feature:
+          - name: GENERATE_SYNTHETIC_ANNOTATIONS
+            value: true
+    - query
+    - contentType
+    - headers: ' (${request.httpMethod} equals POST) or (${request.headers.name} notEquals ${request.payload.jsonPath[$.pet.name]})'

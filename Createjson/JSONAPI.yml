@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: JSONAPI
+  namespace: Createjson
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: JSONAPI-spec.json
+  policy-sequence:
+    - $ref: Createjson:PolicySeq:1.0

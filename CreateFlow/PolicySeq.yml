@@ -12,3 +12,5 @@ spec:
   iam: []
   routing:
     - $ref: CreateFlow:test_route:1.0
+  req_processing:
+    - $ref: CreateFlow:Validatespec-Req:1.0

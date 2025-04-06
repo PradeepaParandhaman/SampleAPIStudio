@@ -166,10 +166,6 @@ projects:
       - abc
       - '123'
     lastUpdated: 1743176180581
-  test_448_vcs_test:
-    description: ''
-    tags: []
-    lastUpdated: 1743178551882
   test_linting:
     description: ''
     tags: []

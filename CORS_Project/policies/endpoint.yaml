@@ -7,6 +7,8 @@ metadata:
   name: endpoint
   version: 1.0
   namespace: dev_cors
+  tags:
+    - test
 spec:
   url: http://petstore.swagger.io
   method: GET

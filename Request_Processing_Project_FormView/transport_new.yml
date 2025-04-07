@@ -1,0 +1,12 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: transport_new
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags:
+    - new
+    - transport
+spec:
+  protocol:
+    - http

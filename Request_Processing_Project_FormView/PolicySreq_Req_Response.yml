@@ -7,10 +7,8 @@ metadata:
   tags: []
 spec:
   transport:
-    - $ref: dev:transport_test:1.0
+    - $ref: Request_Processing_Project_FormView:transport_new:1.0
   req-processing:
-    - $ref: dev_all:request_processing_policy:alpha
-    - $ref: dev_all:validate_API_Specification_policy:alpha
-    - $ref: sample:req_datamasking:1.0
+    - $ref: Request_Processing_Project_FormView:TransformRequest_new:1.0
   routing:
-    - $ref: test:Routing_2:1.0
+    - $ref: Request_Processing_Project_FormView:test_route:1.0

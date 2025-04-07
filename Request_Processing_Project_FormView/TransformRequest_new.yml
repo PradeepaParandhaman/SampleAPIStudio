@@ -1,0 +1,28 @@
+kind: TransformRequest
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: TransformRequest_new
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags:
+    - new
+    - transform
+spec:
+  condition: >-
+    (${request.httpMethod} equals POST) or (${request.headers.name} notEquals
+    ${request.payload.jsonPath[$.pet.name]})
+  transformations:
+    set:
+      - key: ${request.headers.name}
+        value: petName
+    setMethod: GET
+    setPayload:
+      content-types:
+        - application/json: "\n{\n\t\t\t\t\"petName\":\"tommy\"\n\t\t\t}\n"
+      xsl:
+        - $path: format.xsl
+    namespaces:
+      - prefix: ' ps1'
+        URI: http://test.com
+    remove:
+      - ${request.query.q1}

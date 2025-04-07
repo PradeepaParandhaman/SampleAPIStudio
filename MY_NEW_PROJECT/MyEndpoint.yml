@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MyEndpoint
+  namespace: dev
+  version: '1.0'
+  tags: []
+spec:
+  url: https://petstore3.swagger.io
+  method: GET
+  connectTimeout: 120
+  readTimeout: 120

@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: PolicySequence
+  namespace: dev
+  version: '1.0'
+  tags: []
+spec:
+  routing:
+    - $ref: dev:StraightThroughRouting:1.0
+  transport:
+    - $ref: dev:MyTransport:1.0

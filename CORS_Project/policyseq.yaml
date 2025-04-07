@@ -1,11 +1,8 @@
-#
-# Copyright Super iPaaS Integration LLC, an IBM Company 2024
-#
 kind: PolicySequence
 apiVersion: api.webmethods.io/beta
 metadata:
   name: policyseq
-  version: 1.0
+  version: 1
   namespace: dev_cors
   tags:
     - seq
@@ -14,3 +11,5 @@ spec:
     - $ref: dev_cors:transport:alpha
   routing:
     - $ref: dev_cors:routing:1.0
+  res-processing:
+    - $ref: dev_cors:enforce_cors:1.0

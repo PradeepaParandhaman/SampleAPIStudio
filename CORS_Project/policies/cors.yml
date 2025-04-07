@@ -4,6 +4,8 @@ metadata:
   name: enforce_cors
   version: 1
   namespace: dev_cors
+  tags:
+    - test
 spec:
   enabled: true
   allowedOrigins:

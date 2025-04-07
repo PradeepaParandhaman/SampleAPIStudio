@@ -216,10 +216,6 @@ projects:
       - empty_project
       - test
     lastUpdated: 1743967045707
-  ADeployFailurePrj:
-    description: ''
-    tags: []
-    lastUpdated: 1744002267909
   Swagger_VCS:
     description: ''
     tags: []

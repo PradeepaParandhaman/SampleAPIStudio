@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: test_route
+  namespace: Request_Processing_Project_FormView
+  version: "1.0"
+  tags:
+    - test
+spec:
+  default-endpoint: {}

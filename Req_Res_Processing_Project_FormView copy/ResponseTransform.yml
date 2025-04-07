@@ -1,0 +1,24 @@
+kind: TransformResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ResponseTransform
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags:
+    - response
+spec:
+  condition: (${response.statusCode} equals 200)
+  transformations:
+    set:
+      - key: ${response.headers.h2}
+        value: test
+    remove:
+      - ${response.headers.x-apikey}
+    setStatus:
+      code: '200'
+      message: test
+    setPayload:
+      content-types:
+        - application/xml: <message> Too many request </message>
+      xsl:
+        - $path: format.xsl

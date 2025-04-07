@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Request_Response_API
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: Request_Response_API-spec.json
+  policy-sequence:
+    - $ref: Request_Processing_Project_FormView:PolicySreq_Req_Response:1.0

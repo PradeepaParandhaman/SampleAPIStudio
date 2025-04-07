@@ -1,0 +1,16 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: PolicySreq_Req_Response
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: dev:transport_test:1.0
+  req-processing:
+    - $ref: dev_all:request_processing_policy:alpha
+    - $ref: dev_all:validate_API_Specification_policy:alpha
+    - $ref: sample:req_datamasking:1.0
+  routing:
+    - $ref: test:Routing_2:1.0

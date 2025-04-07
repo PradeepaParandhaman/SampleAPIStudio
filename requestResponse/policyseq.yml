@@ -10,7 +10,7 @@ spec:
     - $ref: sample:transport:1.0
   routing:
     - $ref: sample:strtroute:1.0
-  req_processing:
+  req-processing:
     - $ref: sample:req:1.0
-  res_processing:
+  res-processing:
     - $ref: sample:response:1.0

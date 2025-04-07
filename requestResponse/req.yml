@@ -23,3 +23,4 @@ spec:
     setPayload:
       content-types:
         - application/xml: <test></test>
+      xsl: []

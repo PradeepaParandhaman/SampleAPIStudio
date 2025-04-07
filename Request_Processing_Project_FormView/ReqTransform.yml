@@ -1,0 +1,26 @@
+kind: TransformRequest
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ReqTransform
+  namespace: Request_Processing_Project_FormView
+  version: '1.0'
+  tags:
+    - request
+spec:
+  condition: >-
+    (${request.httpMethod} equals POST) or (${request.headers.name} notEquals
+    ${request.payload.jsonPath[$.pet.name]})
+  transformations:
+    set:
+      - key: ${request.headers.name}
+        value: petName
+    remove:
+      - ${request.query.q1}
+    setPayload:
+      content-types:
+        - application/xml: <test></test>
+      xsl:
+        - $path: format.xsl
+    namespaces:
+      - prefix: ps1
+        URI: http://ps1.com

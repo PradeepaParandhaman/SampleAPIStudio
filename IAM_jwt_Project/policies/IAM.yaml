@@ -1,11 +1,8 @@
-#
-# Copyright Super iPaaS Integration LLC, an IBM Company 2024
-#
 kind: IdentifyAndAuthorize
 apiVersion: api.webmethods.io/beta
 metadata:
   name: identify_and_authorize
-  version: 1.0
+  version: 1
   namespace: iam_all
   tags:
     - identify_and_authorize
@@ -13,27 +10,27 @@ spec:
   enabled: true
   triggerPolicyViolation: true
   identificationType:
-    or:
+    and:
       apiKey:
-        applicationLookup: 'global' #Other values are 'registered' & 'anonymous'
+        applicationLookup: global
       hostNameAddress:
-        applicationLookup: 'registered'
+        applicationLookup: registered
       httpBasicAuth:
-        applicationLookup: 'registered'
+        applicationLookup: registered
       ipAddressRange:
-        applicationLookup: 'registered'
+        applicationLookup: registered
       jwt:
-        applicationLookup: 'registered'
+        applicationLookup: registered
       sslCertificate:
-        applicationLookup: 'registered'
+        applicationLookup: registered
       payloadElement:
-        applicationLookup: 'registered'
+        applicationLookup: registered
         payLoadIdentifier:
-          - jPath: '$.pet.name'
-          - xpath: '$.pet.name'
+          - jPath: $.pet.name
+          - xpath: $.pet.name
             namespaces:
               - prefix: ''
                 URI: ''
-          - regex: '$.pet.name'
+          - regex: $.pet.name
       httpHeaders:
-        applicationLookup: 'registered'
+        applicationLookup: registered

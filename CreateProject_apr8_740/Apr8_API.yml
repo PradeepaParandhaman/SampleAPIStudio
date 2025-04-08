@@ -10,3 +10,5 @@ metadata:
 spec:
   api-spec:
     $path: Apr8_API-spec.json
+  policy-sequence:
+    - $ref: CreateProject_apr8_740:Policy_APr8:1.0

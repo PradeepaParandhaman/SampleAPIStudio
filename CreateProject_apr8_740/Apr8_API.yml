@@ -1,0 +1,12 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Apr8_API
+  namespace: CreateProject_apr8_740
+  version: '1.0'
+  tags:
+    - apr8
+  type: REST
+spec:
+  api-spec:
+    $path: Apr8_API-spec.json

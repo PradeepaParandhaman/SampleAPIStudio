@@ -1,0 +1,17 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Log
+  namespace: CreateProject_apr8_740
+  version: '1.0'
+  tags: []
+spec:
+  logRequestHeaders: true
+  logRequestPayload: true
+  logResponseHeaders: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: onfailure
+  destination:
+    - email:
+        - Pradeepa.Parandhaman@ibm.com

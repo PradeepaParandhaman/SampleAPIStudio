@@ -1,0 +1,8 @@
+kind: GlobalPolicy
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: GlobalPolicy
+  namespace: dev_global
+  version: '1.0'
+  tags: []
+spec: {}

@@ -1,0 +1,14 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SwaggerAPIVCS
+  namespace: Swagger Project
+  version: '1.0'
+  tags:
+    - test
+  type: REST
+spec:
+  api-spec:
+    $path: SwaggerAPIVCS-spec.json
+  policy-sequence:
+    - $ref: Swagger Project:test_Policy:1.0

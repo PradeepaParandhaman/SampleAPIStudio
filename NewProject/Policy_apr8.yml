@@ -1,0 +1,18 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Policy_apr8
+  namespace: NewProject
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: dev:transport_test:1.0
+  iam:
+    - $ref: dev:identify_and_authorize:1.0
+  req-processing:
+    - $ref: dev:request-processing-policy:1.0
+  monitoring:
+    - $ref: CreateProject_apr8_740:Log:1.0
+  routing:
+    - $ref: test:Routing_2:1.0

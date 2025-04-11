@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: JsonImport
+  namespace: VCSProject_RCyaml
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: JsonImport-spec.json
+  policy-sequence:
+    - $ref: VCSProject_RCyaml:Policyjson:1.0

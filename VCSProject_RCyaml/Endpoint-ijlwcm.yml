@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Endpoint-ijlwcm
+  namespace: default
+  version: '1.0'
+  tags: []
+spec:
+  method: CUSTOM
+  url: http://localhost:3000
+  connectTimeout: 20
+  readTimeout: 3

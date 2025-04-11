@@ -1,0 +1,15 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Policyjson
+  namespace: VCSProject_RCyaml
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: VCSProject_RCyaml:tarnsport:1.0
+    - $ref: sample:setMediaType:1.0
+  routing:
+    - $ref: VCSProject_RCyaml:route_rc:1.0
+  iam:
+    - $ref: VCSProject_RCyaml:IAM_vcs:1.0

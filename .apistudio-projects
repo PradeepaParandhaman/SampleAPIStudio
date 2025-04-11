@@ -43,10 +43,6 @@ projects:
       - transport
       - routing
     lastUpdated: 1733988881438
-  IAM_Project_UI:
-    description: This Project contains - IAM, Transport and routing policies.
-    tags: []
-    lastUpdated: 1734432785677
   MultiYamlProject:
     description: This project contains Multi Yaml files.
     tags:

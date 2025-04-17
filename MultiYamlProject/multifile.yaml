@@ -126,9 +126,6 @@ spec:
   compressPayloads: true # default value = false
   logGenerationFrequency: always
   destination:
-    - self
-    - dev_portals:
-      - devportal1 #name of the portal instance in the gateway
     - email:
       - pradee@ibm.com        
 

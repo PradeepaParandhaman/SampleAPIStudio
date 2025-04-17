@@ -126,10 +126,6 @@ projects:
       - abc
       - '123'
     lastUpdated: 1743176180581
-  test_linting:
-    description: ''
-    tags: []
-    lastUpdated: 1743507565665
   CP_project:
     description: ''
     tags: []

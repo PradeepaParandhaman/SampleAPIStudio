@@ -182,3 +182,7 @@ projects:
       - empty_project
       - test
     lastUpdated: 1744889687517
+  TestProject_UI:
+    description: ''
+    tags: []
+    lastUpdated: 1744889758540

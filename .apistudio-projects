@@ -96,10 +96,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1741080070447
-  test_scratch:
-    description: ''
-    tags: []
-    lastUpdated: 1742814525107
   IAMProject_scratch_VCS:
     description: ''
     tags: []

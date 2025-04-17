@@ -1,0 +1,27 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: contentBasedRouting
+  version: 1.0
+  namespace: dev
+spec:
+  default-endpoint:
+    $ref: dev:default_endpoint:1.0
+  content-based-endpoints:
+    - payLoadIdentifier:
+        xPath: 'some/xpath'
+        namespaces:
+        - prefix: 'ns1'
+          URI: 'http://uri1'
+        - prefix: 'ns2'
+          URI: 'http://uri2'
+      endpoint:
+        $ref: dev:content_based_endpoint1:1.0
+    - payLoadIdentifier:
+        jPath: 'some/jsonpath'
+      endpoint:
+        $ref: dev:content_based_endpoint2:1.0
+    - payLoadIdentifier:
+        regex: 'some*regex'
+      endpoint:
+        $ref: dev:content_based_endpoint3:1.0

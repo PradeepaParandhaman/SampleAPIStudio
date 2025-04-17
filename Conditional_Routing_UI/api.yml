@@ -14,6 +14,6 @@ metadata:
   type: REST
 spec:
   api-spec:
-    $path: petstore1.yaml
+    $path: petstore.yml
   policy-sequence: 
     - $ref: dev:conditional_routing_policies:1.0

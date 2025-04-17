@@ -152,10 +152,6 @@ projects:
       - api
       - apigw
     lastUpdated: 1743767612791
-  test_project:
-    description: ''
-    tags: []
-    lastUpdated: 1743870177303
   DeployFailure2:
     description: ''
     tags: []

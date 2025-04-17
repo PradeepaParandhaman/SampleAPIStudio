@@ -1,0 +1,19 @@
+#
+# Copyright Super iPaaS Integration LLC, an IBM Company 2024
+#
+kind: api
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: Conditional_Routing_API_test
+  namespace: dev
+  version: 1.0
+  tags:
+    - sample
+    - automation
+    - conditional_routing
+  type: REST
+spec:
+  api-spec:
+    $path: petstore1.yaml
+  policy-sequence: 
+    - $ref: dev:conditional_routing_policies:1.0

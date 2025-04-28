@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testAPIApr28
+  namespace: SampleApr28_Project
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: testAPIApr28-spec.yml
+  policy-sequence:
+    - $ref: SampleApr28_Project:seqfile:1.0

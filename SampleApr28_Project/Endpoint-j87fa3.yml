@@ -1,0 +1,12 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Endpoint-j87fa3
+  namespace: default
+  version: '1.0'
+  tags: []
+spec:
+  method: CUSTOM
+  url: test.com
+  connectTimeout: 20
+  readTimeout: 4

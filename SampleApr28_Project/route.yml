@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: route
+  namespace: SampleApr28_Project
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: default:Endpoint-j87fa3:1.0

@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: seqfile
+  namespace: SampleApr28_Project
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: SampleApr28_Project:trnsport:1.0
+  routing:
+    - $ref: SampleApr28_Project:route:1.0

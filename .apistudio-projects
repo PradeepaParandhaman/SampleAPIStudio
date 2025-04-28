@@ -149,10 +149,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1744109349007
-  abcd:
-    description: ''
-    tags: []
-    lastUpdated: 1744113215640
   testrftg:
     description: ''
     tags: []

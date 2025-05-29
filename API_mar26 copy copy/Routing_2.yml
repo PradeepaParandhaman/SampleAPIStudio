@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Routing_2
+  namespace: test
+  version: "1.0"
+  tags:
+    - test
+spec:
+  default-endpoint: {}

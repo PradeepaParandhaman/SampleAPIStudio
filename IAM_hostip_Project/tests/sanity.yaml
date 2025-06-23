@@ -28,4 +28,4 @@ spec:
         sslVerification: false
         encodeURL: true
       assertions:
-        $ref: iam_host_ip:basicassert:alpha
+        $ref: iam_host_ip:basicassert_test:alpha

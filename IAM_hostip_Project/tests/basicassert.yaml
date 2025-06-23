@@ -4,9 +4,9 @@
 kind: assertion
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: basicassert
-  version: alpha
+  name: basicassert_test
   namespace: iam_host_ip
+  version: alpha
   tags:
     - payEnv
 spec:

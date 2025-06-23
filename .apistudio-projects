@@ -189,3 +189,7 @@ projects:
       - abc
       - '123'
     lastUpdated: 1748500443454
+  testProject:
+    description: ''
+    tags: []
+    lastUpdated: 1750677006535

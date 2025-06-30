@@ -1,0 +1,14 @@
+kind: MCPServerConfig
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MCPPradeepa
+  namespace: test-pradee
+  version: alpha
+  tags:
+    - test
+spec:
+  tools:
+    - $ref: test:testMCP:test
+  server:
+    mode: stdio
+  log-level: INFO

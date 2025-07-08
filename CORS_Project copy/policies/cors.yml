@@ -1,0 +1,27 @@
+#
+# Copyright Super iPaaS Integration LLC, an IBM Company 2024
+#
+kind: CORS
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: enforce_cors
+  version: 1.0
+  namespace: dev_cors
+spec:
+ enabled: true
+ allowedOrigins:
+  - www.domain.com
+  - www.test.com
+ allowedHeaders:
+  - header1
+  - header2
+ exposedHeaders:
+  - header3
+  - header4
+ allowCredentials: true
+ allowedMethods:
+  - GET
+  - POST
+  - PUT
+  - DELETE
+ maxAge: 34

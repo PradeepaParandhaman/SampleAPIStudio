@@ -1,0 +1,15 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: APIJul8
+  namespace: TestVcsFlow
+  version: '1.0'
+  tags:
+    - test
+    - '123'
+  type: REST
+spec:
+  api-spec:
+    $path: APIJul8-spec.yml
+  policy-sequence:
+    - $ref: TestVcsFlow:testPolicy:1.0

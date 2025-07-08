@@ -1,0 +1,21 @@
+openapi: 3.0.1
+info:
+  title: Spec
+  version: ''
+paths:
+  /test:
+    summary: test123
+    description: ''
+    delete:
+      responses: {}
+    patch:
+      responses: {}
+security: []
+tags:
+  - name: test-tag
+    description: ''
+    externalDocs:
+      url: ''
+      description: ''
+servers:
+  - url: http://petstore.io

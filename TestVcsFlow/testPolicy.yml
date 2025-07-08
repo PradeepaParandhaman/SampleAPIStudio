@@ -1,0 +1,15 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testPolicy
+  namespace: TestVcsFlow
+  version: '1.0'
+  tags:
+    - '123'
+spec:
+  transport:
+    - $ref: dev:transport_policy:alpha
+  iam:
+    - $ref: sample:authorizeUser:1.0
+  routing:
+    - $ref: dev:conditionalRouting:1.0

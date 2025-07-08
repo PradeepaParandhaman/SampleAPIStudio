@@ -1,0 +1,22 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testSanity
+  namespace: TestVcsFlow
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: 'test:Tuple_API_Desktop:1.0'
+  environment:
+    $ref: lfs:testEnv:1.0
+  request:
+    - method: GET
+      resource: /pet/10
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        noauth: true
+      assertions:
+        $ref: ""

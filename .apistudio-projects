@@ -95,9 +95,3 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1751973222282
-  CORS_Project copy:
-    description: This project contains only policies - transport,  routing and CORS.
-    tags:
-      - transport
-      - routing
-    lastUpdated: 1751973584322

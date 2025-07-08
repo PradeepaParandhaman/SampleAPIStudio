@@ -1,7 +1,7 @@
 kind: GlobalPolicy
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: GlPolicy_apr5
+  name: GlPolicy_apr5_r
   namespace: test
   version: '1.0'
   tags:

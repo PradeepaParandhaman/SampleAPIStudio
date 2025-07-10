@@ -194,7 +194,7 @@ projects:
     description: Custom HTTP policy
     tags: []
     lastUpdated: 1752127925495
-  IAM_Log_Req_Res_Project_UI copy:
+  Desktop_OpenAPI_Project:
     description: >-
       This project contains - Log, IAM , Req-Res transformation, Routing and
       transport.
@@ -205,4 +205,4 @@ projects:
       - iam
       - route
       - tran
-    lastUpdated: 1752130776776
+    lastUpdated: 1752131575216

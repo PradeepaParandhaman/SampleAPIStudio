@@ -9,6 +9,6 @@ metadata:
   type: REST
 spec:
   api-spec:
-    $path: petstore.jsons
+    $path: petstore.json
   policy-sequence: 
     - $ref: dev:dev_policies_ui:1.0

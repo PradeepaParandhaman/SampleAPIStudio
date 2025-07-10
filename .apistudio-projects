@@ -200,7 +200,7 @@ projects:
       - IAM
       - jwt
     lastUpdated: 1752133431087
-  IAM_hostip_Project copy:
+  Desktop_IAM_Project:
     description: |-
       This Project contains IAM -> hostName and ipaddress config along with Log
         Invocation.
@@ -208,4 +208,4 @@ projects:
       - hostname
       - ipaddress
       - Log
-    lastUpdated: 1752133492417
+    lastUpdated: 1752133519205

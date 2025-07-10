@@ -1,0 +1,36 @@
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: identify_and_authorize
+  version: 1
+  namespace: iam_all
+  tags:
+    - identify_and_authorize
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    and:
+      apiKey:
+        applicationLookup: global
+      hostNameAddress:
+        applicationLookup: registered
+      httpBasicAuth:
+        applicationLookup: registered
+      ipAddressRange:
+        applicationLookup: registered
+      jwt:
+        applicationLookup: registered
+      sslCertificate:
+        applicationLookup: registered
+      payloadElement:
+        applicationLookup: registered
+        payLoadIdentifier:
+          - jPath: $.pet.name
+          - xpath: $.pet.name
+            namespaces:
+              - prefix: ''
+                URI: ''
+          - regex: $.pet.name
+      httpHeaders:
+        applicationLookup: registered

@@ -100,10 +100,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1742883774625
-  Monitoring_Project:
-    description: ''
-    tags: []
-    lastUpdated: 1742914158490
   CreateProject_policies:
     description: ''
     tags: []

@@ -190,7 +190,7 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1751537415299
-  Custom_HTTP_UI copy:
+  Desktop_Swagger_Project:
     description: Custom HTTP policy
     tags: []
-    lastUpdated: 1752127898278
+    lastUpdated: 1752127925495

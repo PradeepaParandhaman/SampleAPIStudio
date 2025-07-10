@@ -104,10 +104,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743079137092
-  GlobalPolicy_API:
-    description: ''
-    tags: []
-    lastUpdated: 1743085264410
   API_mar26 copy:
     description: ''
     tags:
@@ -198,3 +194,7 @@ projects:
       - route
       - tran
     lastUpdated: 1752131575216
+  Desktop_GlobalPolicy_Project:
+    description: ''
+    tags: []
+    lastUpdated: 1752132332563

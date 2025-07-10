@@ -1,0 +1,14 @@
+kind: CustomHttpHeader
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: customHttpHeader_ui
+  version: 1.0
+  namespace: dev
+  tags:
+    - test
+spec: 
+  property:
+    - key: key1
+      value: value1
+    - key: key2
+      value: value2

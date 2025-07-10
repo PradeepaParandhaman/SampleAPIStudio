@@ -11,9 +11,9 @@ metadata:
   namespace: iam_host_ip
 spec:
   api:
-    $endpoint: "http://daso.dev.fyre.ibm.com:5555/gateway/API_mar26/1.0"
+    $ref: "iam_host_ip:Desktop_IAM_hostIPAPI_Automation:1.0"
   environment:
-    $ref: iam_host_ip:env:alpha
+    $ref: iam_host_ip:desktopenv:alpha
   request:
     - method: GET
       resource: /pet/11

@@ -4,7 +4,7 @@
 kind: environment
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: env
+  name: desktopenv
   version: alpha
   namespace: iam_host_ip
   tags:

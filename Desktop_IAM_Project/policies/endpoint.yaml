@@ -7,6 +7,8 @@ metadata:
   name: endpoint
   version: alpha
   namespace: iam_host_ip
+  tags:
+     - tests
 spec:
   url: http://petstore.swagger.io
   method: GET

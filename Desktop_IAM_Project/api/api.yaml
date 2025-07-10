@@ -4,7 +4,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: IAM_hostIPAPI
+  name: Desktop_IAM_hostIPAPI_Automation
   namespace: iam_host_ip
   version: 1.0
   tags:
@@ -13,8 +13,7 @@ metadata:
     - UPI
   type: REST
 spec:
-  mocked: true
   api-spec: 
-    $path: api/spec/petstore.yaml
+    $path: api/spec/petstore.json
   policy-sequence: 
     - $ref: iam_host_ip:policyseq:1

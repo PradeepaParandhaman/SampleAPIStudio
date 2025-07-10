@@ -7,6 +7,8 @@ metadata:
   name: transport
   namespace: iam_host_ip
   version: alpha
+  tags:
+    - transport
 spec: 
     protocol:
       - http

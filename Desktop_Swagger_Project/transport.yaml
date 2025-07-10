@@ -4,9 +4,11 @@
 kind: Transport
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: transport_policy_ui
+  name: transport_policy_ui_desktop
   namespace: dev
   version: alpha
+  tags:
+    - desktop
 spec: 
     protocol:
       - http

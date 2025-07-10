@@ -1,7 +1,7 @@
 kind: CustomHttpHeader
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: customHttpHeader_ui
+  name: customHttpHeader_ui_desktop
   version: 1.0
   namespace: dev
   tags:

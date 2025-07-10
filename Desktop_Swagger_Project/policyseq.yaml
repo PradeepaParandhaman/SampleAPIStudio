@@ -8,6 +8,6 @@ metadata:
     - dev_policies
 spec:
   routing:
-    - $ref: dev:customHttpHeader_ui:1.0
+    - $ref: dev:customHttpHeader_ui_desktop:1.0
   transport:
-    - $ref: dev:transport_policy_ui:alpha
+    - $ref: dev:transport_policy_ui_desktop:alpha

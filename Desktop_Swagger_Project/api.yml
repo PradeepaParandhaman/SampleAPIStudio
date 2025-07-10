@@ -1,14 +1,14 @@
 kind: api
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: APIwCustomExtension_Automation_UI
-  namespace: dev
+  name: Desktop_Swagger_API_Automation
+  namespace: desktop
   version: 1.0
   tags:
     - sample
   type: REST
 spec:
   api-spec:
-    $path: petstore.yaml
+    $path: petstore.jsons
   policy-sequence: 
     - $ref: dev:dev_policies_ui:1.0

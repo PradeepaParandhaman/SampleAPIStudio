@@ -13,7 +13,7 @@ spec:
   transport:
     - $ref: dev_all:transport:alpha
   iam:
-    - $ref: dev_all:My_IAM:alpha
+    - $ref: dev_all:My_IAM_test:alpha
   monitoring:
     - $ref: dev_all:log_invocation:alpha
   routing:

@@ -3,7 +3,7 @@ apiVersion: api.webmethods.io/v1
 metadata:
   name: dev_policies_nltm
   version: 1.0
-  namespace: dev
+  namespace: dev_123
   tags:
     - dev_policies
 spec:

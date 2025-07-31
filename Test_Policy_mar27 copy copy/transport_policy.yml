@@ -1,0 +1,10 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: transport_policy
+  namespace: test
+  version: '1.0'
+  tags: []
+spec:
+  protocol:
+    - http

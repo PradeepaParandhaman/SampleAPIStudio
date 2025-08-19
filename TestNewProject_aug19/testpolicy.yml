@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testpolicy
+  namespace: TestNewProject_aug19
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: TestNewProject_aug19:TestTransport:1.0
+  routing:
+    - $ref: TestNewProject_aug19:RouteTest:1.0

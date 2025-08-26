@@ -7,7 +7,7 @@ metadata:
   tags: []
 spec:
   api:
-    $ref: 'DemoTestingFriday:apiFriday:1.0'
+    $ref: 'PublishTesting:apiFriday:1.0'
   request:
     - method: GET
       resource: /pet/1

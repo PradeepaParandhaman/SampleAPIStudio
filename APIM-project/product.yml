@@ -8,7 +8,7 @@ metadata:
   description: ''
 spec:
   apis:
-    - $ref: DemoTestingFriday:apiFriday:1.0
+    - $ref: PublishTesting:apiFriday:1.0
   plans:
     - $ref: DemoTestingFriday:planFriday:1.0
   x-portal-config:

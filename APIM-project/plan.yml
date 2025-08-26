@@ -1,0 +1,35 @@
+kind: Plan
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: planFriday
+  namespace: DemoTestingFriday
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota:
+      - $ref: DemoTestingFriday:Quota-gnfx3v:1.0
+      - $ref: APIM-project:Quota-sx9h48:1.0
+    withRateLimit:
+      - name: RL1
+        maxRequest: 100
+        interval: 60m
+        alertMessage: alerted
+        alertConfiguration: once
+  x-datapower-config:
+    apis:
+      - $ref: DemoTestingFriday:apiFriday:1.0
+        operations:
+          - path: /
+            method: GET
+          - path: /
+            method: PUT
+          - path: /
+            method: POST
+          - path: /
+            method: DELETE
+          - path: /
+            method: HEAD
+          - path: /
+            method: PATCH

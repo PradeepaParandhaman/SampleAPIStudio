@@ -1,0 +1,13 @@
+kind: Plan
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: NewPlanDP
+  namespace: DPProject_Publish
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota:
+      - $ref: DPProject_Publish:Quota-aelc7s:1.0
+    withRateLimit: []

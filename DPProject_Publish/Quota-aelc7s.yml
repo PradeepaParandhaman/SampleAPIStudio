@@ -1,0 +1,20 @@
+kind: Quota
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Quota-aelc7s
+  namespace: DPProject_Publish
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  maxRequest: 1000
+  interval: 10m
+  x-webm-config:
+    alertConfiguration:
+      message: Limit reached
+      frequency: once
+    notification:
+      enabled: true
+      notifyAfter: '10'
+      message: test- notification
+  onLimitReach: block

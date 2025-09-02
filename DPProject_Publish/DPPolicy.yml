@@ -1,0 +1,38 @@
+kind: DataPowerAssembly
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: dpPublish
+  namespace: PublishTesting
+  version: '1.0'
+  tags: []
+spec:
+  x-ibm-configuration:
+    gateway: datapower-api-gateway
+    assembly:
+      execute:
+        - switch:
+            version: 2.1.0
+            title: switch
+            case:
+              - condition: 'true'
+                execute: []
+        - gatewayscript:
+            version: 2.0.0
+            title: gatewayscript
+        - user-security:
+            version: 2.1.0
+            title: user-security
+            factor-id: default
+            extract-identity-method: basic
+            ei-stop-on-error: true
+            ei-custom-form-csp: default-src 'self'
+            user-auth-method: user-registry
+            au-stop-on-error: true
+            user-registry: ''
+            user-az-method: authenticated
+            az-stop-on-error: true
+            az-custom-form-csp: default-src 'self'
+        - message-template:
+            version: 2.0.0
+            title: message-template
+            content-type: application/json

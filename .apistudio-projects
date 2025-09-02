@@ -170,10 +170,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1750677006535
-  test:
-    description: ''
-    tags: []
-    lastUpdated: 1751537415299
   Desktop_Swagger_Project:
     description: Custom HTTP policy
     tags: []

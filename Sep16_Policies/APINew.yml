@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: APINew
+  namespace: Sep16_Policies
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./APINew-spec.json
+  policy-sequence:
+    - $ref: Sep16_Policies:NewPolicy:1.0

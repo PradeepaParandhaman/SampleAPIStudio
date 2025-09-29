@@ -83,11 +83,11 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1744953044211
-  Policies_Deepak:
-    description: ''
-    tags: []
-    lastUpdated: 1759127887533
   Policies_datapower:
     description: ''
     tags: []
     lastUpdated: 1759138497139
+  Policies_wmgateway:
+    description: ''
+    tags: []
+    lastUpdated: 1759138902515

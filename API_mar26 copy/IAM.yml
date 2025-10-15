@@ -1,8 +1,0 @@
-kind: IdentifyAndAuthorize
-apiVersion: api.webmethods.io/beta
-metadata:
-  name: IAM
-  namespace: test
-  version: "1.0"
-  tags: []
-spec: {}

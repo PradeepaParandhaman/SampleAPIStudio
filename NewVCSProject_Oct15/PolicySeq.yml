@@ -1,0 +1,13 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PolicySeq
+  namespace: NewVCSProject_Oct15
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  monitoring:
+    - $ref: NewVCSProject_Oct15:LogVCS:1.0

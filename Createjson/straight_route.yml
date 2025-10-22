@@ -1,9 +1,0 @@
-kind: Route
-apiVersion: api.webmethods.io/beta
-metadata:
-  name: straight_route
-  namespace: Createjson
-  version: "1.0"
-  tags: []
-spec:
-  default-endpoint: {}

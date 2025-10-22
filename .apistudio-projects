@@ -111,10 +111,6 @@ projects:
       - abc
       - '123'
     lastUpdated: 1743176180581
-  CP_project:
-    description: ''
-    tags: []
-    lastUpdated: 1743514705164
   DeployFailure2:
     description: ''
     tags: []
@@ -123,10 +119,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1743927182095
-  Createjson:
-    description: ''
-    tags: []
-    lastUpdated: 1743932534338
   Swagger_VCS:
     description: ''
     tags: []

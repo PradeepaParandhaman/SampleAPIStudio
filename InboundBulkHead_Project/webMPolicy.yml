@@ -1,0 +1,13 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: webMPolicy
+  namespace: InboundBulkHead_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  transport:
+    - $ref: InboundBulkHead_Project:InboundBulkHead:1.0

@@ -1,7 +1,7 @@
 kind: api
 apiVersion: api.webmethods.io/v1
 metadata:
-  name: APIwCustomExtension_Automation_UI
+  name: APIwCustomExtension_Automation_UI_tedt
   namespace: dev
   version: 1.0
   tags:

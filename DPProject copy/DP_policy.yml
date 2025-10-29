@@ -1,0 +1,40 @@
+kind: DataPowerAssembly
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DP_policy
+  namespace: DPProject
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - datapower
+spec:
+  x-ibm-configuration:
+    gateway: datapower-api-gateway
+    assembly:
+      execute:
+        - invoke:
+            version: 2.3.0
+            title: invoke
+            backend-type: json
+            header-control:
+              type: blocklist
+              values: []
+            parameter-control:
+              type: allowlist
+              values: []
+            http-version: HTTP/1.1
+            timeout: 60
+            verb: GET
+            chunked-uploads: true
+            persistent-connection: true
+            cache-response: time-to-live
+            cache-ttl: 900
+            websocket-upgrade: false
+            target-url: https://petstore3.swagger.io/api/v3
+        - log:
+            version: 2.1.0
+            title: log
+            log-level: default
+            description: test log
+            mode: send-only

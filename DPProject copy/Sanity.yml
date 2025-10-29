@@ -1,0 +1,23 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Sanity
+  namespace: DPProject
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: DPProject:DP_API:1.0
+  request:
+    - method: POST
+      resource: /pet
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        - $ref: DPProject:assertion_1761721485824:1.0
+      payload:
+        raw:
+          json: |-
+            { "name" : "tommy",
+              "photoUrls": [""]}

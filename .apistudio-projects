@@ -282,10 +282,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1761722981215
-  testnewProject:
-    description: ''
-    tags: []
-    lastUpdated: 1761740885647
   002_test:
     description: ''
     tags: []

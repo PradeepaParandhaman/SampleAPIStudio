@@ -1,13 +1,13 @@
 kind: test
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: testFriday
+  name: testFriday new test
   namespace: DemoTestingFriday
-  version: '1.0'
+  version: "1.0"
   tags: []
 spec:
   api:
-    $ref: 'PublishTesting:apiFriday:1.0'
+    $ref: 'InboundBulkHead_Project:BulkHeadAPI:1.0'
   request:
     - method: GET
       resource: /pet/1
@@ -18,3 +18,11 @@ spec:
         noauth: true
       assertions:
         $ref: "DemoTestingFriday:assertionFriday:1.0"
+      skipped: true
+    - method: GET
+      resource: /pet/findByStatus
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        $ref: ""

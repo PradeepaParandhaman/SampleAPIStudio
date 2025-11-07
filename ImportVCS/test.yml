@@ -1,0 +1,20 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: testFriday
+  namespace: DemoTestingFriday
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: 'PublishTesting:apiFriday:1.0'
+  request:
+    - method: GET
+      resource: /pet/1
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        noauth: true
+      assertions:
+        $ref: "DemoTestingFriday:assertionFriday:1.0"

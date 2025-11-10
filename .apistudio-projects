@@ -250,10 +250,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1761222879954
-  testOct24:
-    description: ''
-    tags: []
-    lastUpdated: 1761312538970
   Route_Invoke_Project:
     description: ''
     tags: []
@@ -262,10 +258,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1761638732171
-  APIM-new-test:
-    description: ''
-    tags: []
-    lastUpdated: 1761720752868
   DPProject:
     description: ''
     tags: []
@@ -278,10 +270,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1761722981215
-  002_test:
-    description: ''
-    tags: []
-    lastUpdated: 1761806238605
   ImportVCS:
     description: ''
     tags: []

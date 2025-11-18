@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: NewAPI
+  namespace: test_new_VCS
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./NewAPI-spec.json
+  policy-sequence:
+    - $ref: test_new_VCS:webM:1.0

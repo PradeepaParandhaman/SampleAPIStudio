@@ -1,0 +1,22 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: test
+  namespace: test_new_VCS
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: 'test_new_VCS:NewAPI:1.0'
+  request:
+    - method: GET
+      resource: /pet/findByStatus
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        - $ref: test_new_VCS:assertion_1763449346425:1.0
+      parameters:
+        - key: status
+          value: available
+          description: Status values that need to be considered for filter

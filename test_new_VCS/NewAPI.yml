@@ -11,3 +11,5 @@ spec:
     $path: ./NewAPI-spec.json
   policy-sequence:
     - $ref: test_new_VCS:webM:1.0
+  uriSchemes:
+    $ref: test_new_VCS:URInew:1.0

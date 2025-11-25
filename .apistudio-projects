@@ -274,14 +274,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1763561793769
-  test_vcs:
-    description: ''
-    tags: []
-    lastUpdated: 1763737644950
-  Sample_VCS:
-    description: ''
-    tags: []
-    lastUpdated: 1763958439246
   My_first_project:
     description: ''
     tags: []

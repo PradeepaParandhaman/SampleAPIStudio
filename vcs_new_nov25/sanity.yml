@@ -1,0 +1,22 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: sanity
+  namespace: vcs_new_nov25
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: 'vcs_new_nov25:newAPI:1.0'
+  request:
+    - method: GET
+      resource: /pet/findByStatus
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        - $ref: vcs_new_nov25:assertion_1764082256185:1.0
+      parameters:
+        - key: status
+          value: available
+          description: Status values that need to be considered for filter

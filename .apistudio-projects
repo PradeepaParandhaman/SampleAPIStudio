@@ -67,43 +67,11 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1740989599300
-  Custom_HTTP_UI:
-    description: Custom HTTP policy
-    tags: []
-    lastUpdated: 1742792340826
-  LB_Routing_UI:
-    description: Routing policy
-    tags: []
-    lastUpdated: 1742792460459
   OutBoundAlias_UI:
     description: OutBoundAlias project for UI
     tags:
       - alias
     lastUpdated: 1741007036133
-  OutboundBasicAuth_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741075025487
-  OutboundIncomingJWT_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741075652666
-  OutboundKerberosAuth_Custom_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741077428733
-  OutBoundNLTM_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1741080070447
-  IAMProject_scratch_VCS:
-    description: ''
-    tags: []
-    lastUpdated: 1742883774625
-  CreateProject_policies:
-    description: ''
-    tags: []
-    lastUpdated: 1743079137092
   API_mar26_test:
     description: ''
     tags:
@@ -111,11 +79,3 @@ projects:
       - abc
       - '123'
     lastUpdated: 1743176180581
-  ValidateAPISpec-Req_FormView:
-    description: ''
-    tags: []
-    lastUpdated: 1743927182095
-  Swagger_VCS:
-    description: ''
-    tags: []
-    lastUpdated: 1744004986545

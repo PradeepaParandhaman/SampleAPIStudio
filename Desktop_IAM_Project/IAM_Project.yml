@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: IAM_Project
+  namespace: Desktop_IAM_Project
+  version: 1.0.25
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./IAM_Project-spec.yml
+  policy-sequence:
+    - $ref: Desktop_IAM_Project:webmIAM:1.0

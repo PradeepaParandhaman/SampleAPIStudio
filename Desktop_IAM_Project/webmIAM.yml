@@ -1,0 +1,15 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: webmIAM
+  namespace: Desktop_IAM_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: Desktop_IAM_Project:invoke-webmIAM:1.0
+  security:
+    - $ref: Desktop_IAM_Project:IAM:1.0

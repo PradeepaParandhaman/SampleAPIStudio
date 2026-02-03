@@ -1,0 +1,25 @@
+kind: IAM
+apiVersion: api.ibm.com/v1
+metadata:
+  name: IAM
+  namespace: Desktop_IAM_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  accessControl:
+    - - httpBasic:
+          applicationSecurity:
+            mode: identify
+      - apiKey:
+          applicationSecurity:
+            mode: identify
+  extensions:
+    webm-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        triggerPolicyViolation: true
+        authenticationMode: ANY
+        accessControl: {}

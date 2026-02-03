@@ -1,0 +1,23 @@
+kind: CORS
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OrderApi-Cors
+  namespace: DPv5c_Product_Order
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  rules:
+    - action: allow
+      originList:
+        - '*'
+      allowCredentials: true
+      allowMethods:
+        - GET
+      allowHeaders:
+        - X-IBM-Client-Id
+      maxAge: 0
+      exposeHeaders:
+        predefined: false
+        custom: ''
+        backend: false

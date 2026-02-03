@@ -1,0 +1,24 @@
+kind: CORS
+apiVersion: api.ibm.com/v1
+metadata:
+  name: CalculatorApi-Cors
+  namespace: DPv6_Product_Calculator_Soap
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  rules:
+    - action: allow
+      originList:
+        - '*'
+      allowCredentials: true
+      allowMethods:
+        - GET
+        - POST
+      allowHeaders:
+        - X-IBM-Client-Id
+      maxAge: 0
+      exposeHeaders:
+        predefined: false
+        custom: ''
+        backend: false

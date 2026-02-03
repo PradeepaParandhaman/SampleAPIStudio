@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: InvokeAPI
+  namespace: Desktop_Invoke_Project
+  version: 1.0.25
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./InvokeAPI-spec.yml
+  policy-sequence:
+    - $ref: Desktop_Invoke_Project:webmPolicy:1.0

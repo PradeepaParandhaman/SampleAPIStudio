@@ -63,3 +63,7 @@ projects:
       - IAM
       - test
     lastUpdated: 1770125457455
+  Desktop_Log_Project:
+    description: ''
+    tags: []
+    lastUpdated: 1770125525359

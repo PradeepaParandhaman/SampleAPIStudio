@@ -64,8 +64,8 @@ projects:
       - test
     lastUpdated: 1770125457455
   Desktop_Log_Project:
-    description: ''
+    description: This is Log Invocation project
     tags:
       - test
       - Log
-    lastUpdated: 1770125539141
+    lastUpdated: 1770125554008

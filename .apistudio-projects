@@ -54,8 +54,9 @@ projects:
     lastUpdated: 1770124978078
   Desktop_Invoke_Project:
     description: This is Invoke project
-    tags: []
-    lastUpdated: 1770125288775
+    tags:
+      - Invoke
+    lastUpdated: 1770125468377
   Desktop_IAM_Project:
     description: This is IAM project
     tags:

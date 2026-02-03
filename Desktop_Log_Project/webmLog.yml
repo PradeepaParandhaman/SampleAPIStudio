@@ -1,0 +1,15 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: webmLog
+  namespace: Desktop_Log_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: Desktop_Log_Project:invoke-webmLog:1.0
+  monitoring:
+    - $ref: Desktop_Log_Project:LogPolicy:1.0

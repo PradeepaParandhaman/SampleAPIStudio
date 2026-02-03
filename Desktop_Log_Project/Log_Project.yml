@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Log_Project
+  namespace: Desktop_Log_Project
+  version: 1.0.25
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./Log_Project-spec.yml
+  policy-sequence:
+    - $ref: Desktop_Log_Project:webmLog:1.0

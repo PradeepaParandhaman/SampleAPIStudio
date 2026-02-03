@@ -250,50 +250,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1761720870818
-  DPProject duplicate:
-    description: ''
-    tags: []
-    lastUpdated: 1761721562698
-  ImportVCS:
-    description: ''
-    tags: []
-    lastUpdated: 1762517141769
-  test_main:
-    description: ''
-    tags: []
-    lastUpdated: 1762780627435
-  LB_Project:
-    description: ''
-    tags: []
-    lastUpdated: 1762849345696
-  test_new_VCS:
-    description: ''
-    tags: []
-    lastUpdated: 1763448910956
-  testVCSnw:
-    description: ''
-    tags: []
-    lastUpdated: 1763561793769
-  My_first_project:
-    description: ''
-    tags: []
-    lastUpdated: 1763958665456
-  vcs_new_nov25:
-    description: ''
-    tags: []
-    lastUpdated: 1764082129823
-  Create_API_project:
-    description: ''
-    tags: []
-    lastUpdated: 1764152293927
-  vcc_nov28:
-    description: ''
-    tags: []
-    lastUpdated: 1764306450621
-  Pradee_vcs:
-    description: ''
-    tags: []
-    lastUpdated: 1764857885303
   DPNano_Product_Weather:
     description: Sample project with API definitions and policies
     tags:

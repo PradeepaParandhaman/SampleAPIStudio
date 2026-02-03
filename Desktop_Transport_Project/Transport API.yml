@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Transport API
+  namespace: Desktop_Transport_Project
+  version: 1.0.25
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./Transport API-spec.yml
+  policy-sequence:
+    - $ref: Desktop_Transport_Project:webmTransport:1.0

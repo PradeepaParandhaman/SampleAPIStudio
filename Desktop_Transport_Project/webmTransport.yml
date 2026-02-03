@@ -1,0 +1,15 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: webmTransport
+  namespace: Desktop_Transport_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: Desktop_Transport_Project:invoke-webmTransport:1.0
+  transport:
+    - $ref: Desktop_Transport_Project:Inbound:1.0

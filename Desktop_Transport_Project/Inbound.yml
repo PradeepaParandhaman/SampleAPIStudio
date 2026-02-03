@@ -1,0 +1,14 @@
+kind: InboundBulkHead
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Inbound
+  namespace: Desktop_Transport_Project
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  maxConcurrentCalls: 10
+  enableBulkheadForCallbacks:
+    maxConcurrentCallbacks: 10

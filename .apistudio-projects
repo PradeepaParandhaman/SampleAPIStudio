@@ -58,5 +58,7 @@ projects:
     lastUpdated: 1770125288775
   Desktop_IAM_Project:
     description: This is IAM project
-    tags: []
-    lastUpdated: 1770125445680
+    tags:
+      - IAM
+      - test
+    lastUpdated: 1770125457455

@@ -74,3 +74,7 @@ projects:
     tags:
       - test
     lastUpdated: 1770125741057
+  NewProject:
+    description: ''
+    tags: []
+    lastUpdated: 1770731267229

@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: APIVCS
+  namespace: VCSNew
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./APIVCS-spec.json
+  policy-sequence:
+    - $ref: VCSNew:webM:1.0

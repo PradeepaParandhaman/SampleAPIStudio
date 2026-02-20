@@ -1,0 +1,14 @@
+kind: OperationSwitch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OperationSwitch-sntbe7
+  namespace: testVcspradee
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - conditions: []
+      execute: []

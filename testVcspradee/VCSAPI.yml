@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: VCSAPI
+  namespace: testVcspradee
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./VCSAPI-spec.json
+  policy-sequence:
+    - $ref: testVcspradee:NanoPolicy:1.0

@@ -1,0 +1,17 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-NanoPolicy
+  namespace: testVcspradee
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      verb: CUSTOM
+      target:
+        timeout: 30
+        url: /api/v3

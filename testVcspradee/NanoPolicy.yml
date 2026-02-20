@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: NanoPolicy
+  namespace: testVcspradee
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: testVcspradee:invoke-NanoPolicy:1.0
+    - $ref: testVcspradee:OperationSwitch-sntbe7:1.0
+  monitoring:
+    $ref: testVcspradee:telemetry-NanoPolicy:1.0

@@ -1,88 +1,91 @@
 projects:
-  CustomHTTP_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1740989599300
-  API_mar26_test:
-    description: ''
-    tags:
-      - test
-      - abc
-      - '123'
-    lastUpdated: 1743176180581
   DPNano_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978063
+    id: 3yZQVw7Z
   DPv5c_Product_Order:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978069
+    id: WT7dEn97
   DPv6_Product_Calculator_Soap:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978070
+    id: FrOHrkfT
   DPv6_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978075
+    id: Ysrw9hnw
   wM_APIKey_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978076
+    id: dzANAEDb
   wM_NoAuth_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978077
+    id: Vh8kG6iw
   wM_Product_Weather:
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
     lastUpdated: 1770124978078
+    id: LUlGFEfw
   Desktop_Invoke_Project:
     description: This is Invoke project
     tags:
       - Invoke
     lastUpdated: 1770125468377
+    id: h0Hp4PiX
   Desktop_IAM_Project:
     description: This is IAM project
     tags:
       - IAM
       - test
     lastUpdated: 1770125457455
+    id: Fr5uJbHB
   Desktop_Log_Project:
     description: This is Log Invocation project
     tags:
       - test
       - Log
     lastUpdated: 1770125554008
+    id: VQHMS6mj
   Desktop_Transport_Project:
     description: This is transport project
     tags:
       - test
     lastUpdated: 1770125741057
+    id: gvXncYBY
   NewProject:
     description: ''
     tags: []
     lastUpdated: 1770731267229
+    id: lycInmLX
   VCSNew:
     description: ''
     tags: []
     lastUpdated: 1770732902110
+    id: SpKhCjSe
   testVcspradee:
     description: ''
     tags: []
     lastUpdated: 1771570263129
+    id: e83eCu7f

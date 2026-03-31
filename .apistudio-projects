@@ -40,3 +40,57 @@ projects:
     tags: []
     lastUpdated: 1771570263129
     id: e83eCu7f
+  DPv6_Product_Calculator_Soap:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618918
+  DPv6_Product_MultiAPI:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618924
+  DPv6_Product_Weather:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618925
+  DPv5c_Product_Order:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618926
+  DPNano_Product_MultiAPI:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618927
+  DPNano_Product_Weather:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618929
+  wM_APIKey_Weather:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618930
+  wM_NoAuth_Weather:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618931
+  wM_Product_Weather:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981618932

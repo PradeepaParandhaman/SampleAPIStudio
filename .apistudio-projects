@@ -89,3 +89,15 @@ projects:
     tags: []
     lastUpdated: 1771570263129
     id: e83eCu7f
+  DPv6_Product_MultiAPI:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981592587
+  DPNano_Product_MultiAPI:
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774981592589

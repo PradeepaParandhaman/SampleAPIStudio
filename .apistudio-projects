@@ -6,6 +6,7 @@ projects:
       - transport
       - routing
     lastUpdated: 1727765841380
+    id: mw50Xf30
   IAM_Log_Req_Res_Project_UI:
     description: >-
       This project contains - Log, IAM , Req-Res transformation, Routing and
@@ -18,6 +19,7 @@ projects:
       - route
       - tran
     lastUpdated: 1727768158969
+    id: VP2QDqb7
   IAM_hostip_Project:
     description: |-
       This Project contains IAM -> hostName and ipaddress config along with Log
@@ -27,6 +29,7 @@ projects:
       - ipaddress
       - Log
     lastUpdated: 1730109431212
+    id: 6kQQDlUZ
   ServiceCache_Monitoring_Project:
     description: >-
       This project contains all policies related to Monitoring and Error
@@ -37,12 +40,14 @@ projects:
       - error_processing
       - service_cache
     lastUpdated: 1730970289658
+    id: qlxIWZRD
   Routing_Project_UI:
     description: This project contains only mandatory policies - transport and routing.
     tags:
       - transport
       - routing
     lastUpdated: 1733988881438
+    id: 88cZQCmF
   MultiYamlProject:
     description: This project contains Multi Yaml files.
     tags:
@@ -51,98 +56,107 @@ projects:
       - test
       - vcs
     lastUpdated: 1734433018268
+    id: d3u1V80K
   CORS_Project:
     description: This project contains only policies - transport,  routing and CORS.
     tags:
       - transport
       - routing
     lastUpdated: 1734433151088
+    id: V7OMDT14
   IAM_jwt_Project:
     description: This project contains few supported types in IAM project.
     tags:
       - IAM
       - jwt
     lastUpdated: 1734433163038
-  CustomHTTP_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1740989599300
+    id: 5JMjpoKE
   Custom_HTTP_UI:
     description: Custom HTTP policy
     tags: []
     lastUpdated: 1742792340826
+    id: R1ehquJR
   LB_Routing_UI:
     description: Routing policy
     tags: []
     lastUpdated: 1742792460459
+    id: GWDkPJY8
   OutBoundAlias_UI:
     description: OutBoundAlias project for UI
     tags:
       - alias
     lastUpdated: 1741007036133
+    id: w4hLAD5L
   OutboundBasicAuth_UI:
     description: ''
     tags: []
     lastUpdated: 1741075025487
+    id: 8RJKxe8R
   OutboundIncomingJWT_UI:
     description: ''
     tags: []
     lastUpdated: 1741075652666
+    id: 6sXdki8x
   OutboundKerberosAuth_Custom_UI:
     description: ''
     tags: []
     lastUpdated: 1741077428733
+    id: OMOuh8Ro
   OutBoundNLTM_UI:
     description: ''
     tags: []
     lastUpdated: 1741080070447
+    id: l7mTF6Ii
   IAMProject_scratch_VCS:
     description: ''
     tags: []
     lastUpdated: 1742883774625
+    id: nIHC56eq
   CreateProject_policies:
     description: ''
     tags: []
     lastUpdated: 1743079137092
-  API_mar26_test:
-    description: ''
-    tags:
-      - test
-      - abc
-      - '123'
-    lastUpdated: 1743176180581
+    id: 5eqPKbiL
   ValidateAPISpec-Req_FormView:
     description: ''
     tags: []
     lastUpdated: 1743927182095
+    id: LhcetPVM
   Swagger_VCS:
     description: ''
     tags: []
     lastUpdated: 1744004986545
+    id: 5XFuM0yG
   Swagger Project:
     description: ''
     tags: []
     lastUpdated: 1744099119487
+    id: mrw3jMj1
   Swagger_json_Apr11:
     description: ''
     tags: []
     lastUpdated: 1744351953807
+    id: MUyFlAwr
   IAM_Project_UI:
     description: ''
     tags: []
     lastUpdated: 1744875211505
+    id: a6J1Zdrs
   Conditional_Routing_UI:
     description: ''
     tags: []
     lastUpdated: 1744875418227
+    id: rNRhrrUM
   Content_Routing_UI:
     description: ''
     tags: []
     lastUpdated: 1744885344631
+    id: bBkFkGi0
   Desktop_Swagger_Project:
     description: Custom HTTP policy
     tags: []
     lastUpdated: 1752127925495
+    id: RAD7MNqG
   Desktop_OpenAPI_Project:
     description: >-
       This project contains - Log, IAM , Req-Res transformation, Routing and
@@ -155,16 +169,19 @@ projects:
       - route
       - tran
     lastUpdated: 1752131575216
+    id: AlN8vDOs
   Desktop_GlobalPolicy_Project:
     description: ''
     tags: []
     lastUpdated: 1752132332563
+    id: v9MTBJ3l
   IAM_jwt_Project copy:
     description: This project contains few supported types in IAM project.
     tags:
       - IAM
       - jwt
     lastUpdated: 1752133431087
+    id: ek3vFEhG
   Desktop_IAM_Project:
     description: |-
       This Project contains IAM -> hostName and ipaddress config along with Log
@@ -174,87 +191,109 @@ projects:
       - ipaddress
       - Log
     lastUpdated: 1752133519205
+    id: RFHgJuhb
   TestNewProject_aug19:
     description: ''
     tags: []
     lastUpdated: 1755588984883
+    id: Z6LmH5jF
   ProjectAug22:
     description: ''
     tags: []
     lastUpdated: 1755838338556
+    id: L4KDZn9Z
   APIM-project:
     description: ''
     tags: []
     lastUpdated: 1756189336918
+    id: o6J2NZC0
   formviewbug:
     description: ''
     tags: []
     lastUpdated: 1756206428455
+    id: UoeYSL5G
   NewAPIPRoject:
     description: ''
     tags: []
     lastUpdated: 1756474510930
+    id: DzSiaFMK
   DPProject_Publish:
     description: ''
     tags: []
     lastUpdated: 1756805647567
+    id: 48i2qLqU
   NewProjectModel_VCS:
     description: ''
     tags: []
     lastUpdated: 1757920234879
+    id: G0Z3OT3Q
   Sep15ProjectVCS:
     description: ''
     tags: []
     lastUpdated: 1757932540591
+    id: n7fzpnb6
   Sep16_Policies:
     description: ''
     tags: []
     lastUpdated: 1757933113344
+    id: W06chPJk
   Sep15_PolicyTransport:
     description: ''
     tags: []
     lastUpdated: 1757938860775
+    id: YGpJALVg
   LogInvocation_Sep16:
     description: ''
     tags: []
     lastUpdated: 1757998356512
+    id: AMn9oyeI
   TestProject:
     description: ''
     tags: []
     lastUpdated: 1757998841269
+    id: iJfISs0t
   NewProject_Sep16:
     description: ''
     tags: []
     lastUpdated: 1757999084764
+    id: 8hlsj0kZ
   SetAuthorization_Project:
     description: ''
     tags: []
     lastUpdated: 1757999558405
+    id: us3MLoJ5
   ProjectOct7:
     description: ''
     tags: []
     lastUpdated: 1759818428786
+    id: PPlJUFB4
   testproject:
     description: ''
     tags: []
     lastUpdated: 1760520806634
+    id: rHB1PC1b
   NewVCSProject_Oct15:
     description: ''
     tags: []
     lastUpdated: 1760532983528
+    id: cxYU5fLE
   VCSNEW:
     description: ''
     tags: []
     lastUpdated: 1761139992072
+    id: fOnkACfT
   InboundBulkHead_Project:
     description: ''
     tags: []
     lastUpdated: 1761204664660
+    id: hzmrtHGS
   SetMediaType_Project:
     description: ''
     tags: []
     lastUpdated: 1761222879954
+    id: aqV06jG0
   testOct24:
     description: ''
     tags: []
     lastUpdated: 1761312538970
+    id: yHDumfCO

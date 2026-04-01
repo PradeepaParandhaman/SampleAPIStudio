@@ -103,10 +103,10 @@ projects:
       - API
     lastUpdated: 1774981618932
     id: tninNvPY
-  wM_Product_Weather-copy:
+  wM_Product_Weather-Duplicate:
     id: rWC5CfVg
     description: Sample project with API definitions and policies
     tags:
       - sample
       - API
-    lastUpdated: 1775022948447
+    lastUpdated: 1775022962924

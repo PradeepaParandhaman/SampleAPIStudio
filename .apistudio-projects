@@ -6,6 +6,7 @@ projects:
       - transport
       - routing
     lastUpdated: 1727765841380
+    id: X2wAbKSI
   IAM_Log_Req_Res_Project_UI:
     description: >-
       This project contains - Log, IAM , Req-Res transformation, Routing and
@@ -18,6 +19,7 @@ projects:
       - route
       - tran
     lastUpdated: 1727768158969
+    id: 2MngsAWn
   IAM_hostip_Project:
     description: |-
       This Project contains IAM -> hostName and ipaddress config along with Log
@@ -27,6 +29,7 @@ projects:
       - ipaddress
       - Log
     lastUpdated: 1730109431212
+    id: IKvMOdsB
   ServiceCache_Monitoring_Project:
     description: >-
       This project contains all policies related to Monitoring and Error
@@ -37,16 +40,19 @@ projects:
       - error_processing
       - service_cache
     lastUpdated: 1730970289658
+    id: cWDZCoTH
   Routing_Project_UI:
     description: This project contains only mandatory policies - transport and routing.
     tags:
       - transport
       - routing
     lastUpdated: 1733988881438
+    id: aJkac919
   IAM_Project_UI:
     description: This Project contains - IAM, Transport and routing policies.
     tags: []
     lastUpdated: 1734432785677
+    id: XVXvpIig
   MultiYamlProject:
     description: This project contains Multi Yaml files.
     tags:
@@ -55,24 +61,28 @@ projects:
       - test
       - vcs
     lastUpdated: 1734433018268
+    id: K4CZlDq4
   CORS_Project:
     description: This project contains only policies - transport,  routing and CORS.
     tags:
       - transport
       - routing
     lastUpdated: 1734433151088
+    id: W168KqCP
   IAM_jwt_Project:
     description: This project contains few supported types in IAM project.
     tags:
       - IAM
       - jwt
     lastUpdated: 1734433163038
+    id: xCZJ1dRk
   IAM_jwt_Project copy:
     description: This project contains few supported types in IAM project.
     tags:
       - IAM
       - jwt
     lastUpdated: 1735558293308
+    id: M730m8sa
   Conditional_Routing_UI:
     description: This project contains Conditional Routing policies.
     tags:
@@ -80,92 +90,109 @@ projects:
       - conditional
       - policy
     lastUpdated: 1740747988489
+    id: cdDUVAYQ
   Content_Routing_UI:
     description: ''
     tags:
       - test
       - content_routing
     lastUpdated: 1740988875584
-  CustomHTTP_UI:
-    description: ''
-    tags: []
-    lastUpdated: 1740989599300
+    id: SInNDDjs
   Custom_HTTP_UI:
     description: ''
     tags: []
     lastUpdated: 1740993354226
+    id: ZVv20qYW
   Dynamic_Routing_UI:
     description: ''
     tags:
       - test
       - dynamic
     lastUpdated: 1740997572685
+    id: gbsIvdF6
   LB_Routing_UI:
     description: ''
     tags: []
     lastUpdated: 1740997868892
+    id: hN4vBx1c
   OutBoundAlias_UI:
     description: OutBoundAlias project for UI
     tags:
       - alias
     lastUpdated: 1741007036133
+    id: JNh4jOte
   OutboundBasicAuth_UI:
     description: ''
     tags: []
     lastUpdated: 1741075025487
+    id: JJzDfUNf
   OutboundIncomingJWT_UI:
     description: ''
     tags: []
     lastUpdated: 1741075652666
+    id: lStd7gMY
   OutboundKerberosAuth_Custom_UI:
     description: ''
     tags: []
     lastUpdated: 1741077428733
+    id: YDg8Cs7S
   OutBoundNLTM_UI:
     description: ''
     tags: []
     lastUpdated: 1741080070447
+    id: NTjIB3Zh
   TrafficMonitoring_UI:
     description: ''
     tags: []
     lastUpdated: 1741089146924
+    id: khDHBKk3
   test-sowbaringaa:
     description: ''
     tags: []
     lastUpdated: 1743153542744
+    id: aj1BFFlL
   MY_NEW_PROJECT:
     description: ''
     tags: []
     lastUpdated: 1744035204422
+    id: 7Io8prHW
   DoubleFile:
     description: ''
     tags: []
     lastUpdated: 1744106629796
+    id: B4xRi6dw
   testprj1234:
     description: ''
     tags: []
     lastUpdated: 1744114093434
+    id: sUNIvPDU
   SampleApr28_Project:
     description: ''
     tags: []
     lastUpdated: 1745846383039
+    id: kJkWZXFL
   test_new_project_may12:
     description: ''
     tags: []
     lastUpdated: 1747055296089
+    id: 4L5vcu47
   test_switch:
     description: ''
     tags: []
     lastUpdated: 1752481850604
+    id: 0pGc5tWf
   testmain:
     description: ''
     tags: []
     lastUpdated: 1762437179570
+    id: iTkt7BQ8
   test-vcs-909:
     description: ''
     tags: []
     lastUpdated: 1764085186704
+    id: MHVkllQb
   testVcsnew:
     description: ''
     tags: []
     lastUpdated: 1771570234464
+    id: yO756PaH

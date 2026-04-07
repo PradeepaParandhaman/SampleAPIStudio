@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "0d779f8c-2af8-4ae7-90ec-d7d31bcae7d7:0",
+      "projectId": "HAQ5hIBx",
+      "filePath": "WmProject_vcs/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1775556066498,
+      "schemaVersion": 1
+    },
+    {
+      "id": "6fa8a72b-0259-4079-b7ff-8bc581eabe19:0",
+      "projectId": "HAQ5hIBx",
+      "filePath": "WmProject_vcs/scratchapi-spec-1.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1775556381753,
+      "schemaVersion": 1
+    },
+    {
+      "id": "83331b96-d47a-4b92-9588-48eb304fe412:0",
+      "projectId": "HAQ5hIBx",
+      "filePath": "WmProject_vcs/invoke-webm.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1775556021311,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-webm",
+      "namespace": "WmProject_vcs",
+      "version": "1.0",
+      "contentHash": "88ef61226f4a1e5f"
+    },
+    {
+      "id": "e1988e16-d6e0-4bb1-820e-278ca4d06af0:0",
+      "projectId": "HAQ5hIBx",
+      "filePath": "WmProject_vcs/webm.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1775556021424,
+      "schemaVersion": 1,
+      "kind": "StagedPolicySequence",
+      "name": "webm",
+      "namespace": "WmProject_vcs",
+      "version": "1.0",
+      "contentHash": "f29adc21aa22eef7"
+    }
+  ],
+  "edges": [
+    {
+      "id": "82a5b9e9-d0ab-4aa5-9e78-2ab644864475",
+      "projectId": "HAQ5hIBx",
+      "sourceNodeId": "e1988e16-d6e0-4bb1-820e-278ca4d06af0:0",
+      "targetNodeId": "83331b96-d47a-4b92-9588-48eb304fe412:0",
+      "targetRefType": "same-project",
+      "targetRefString": "WmProject_vcs:invoke-webm:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1775556021425,
+      "lastValidated": 1775556021425
+    }
+  ]
+}

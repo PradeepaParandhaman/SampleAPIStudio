@@ -1,0 +1,98 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: singapore-air-temperature-api-tool-v5d1e
+  namespace: NewProjectVCSMCP
+  version: "1.0"
+  tags: []
+  description: >
+    This API provides real-time air temperature data for Singapore, sourced from
+    the National Environment Agency (NEA). It is designed to demonstrate IBM API
+    Connect capabilities using the DataPower API Gateway (v6).
+
+
+    The API exposes a single GET endpoint at /environment/air-temperature that
+    retrieves current temperature readings from multiple weather stations across
+    Singapore.
+
+    Gateway Type: DataPower API Gateway (v6)
+
+    Security: The API uses API Key authentication via the X-IBM-Client-Id header
+    (clientID security scheme).
+
+
+    Assembly Policies: The DataPower Assembly (DPv6_Assembly) includes:
+
+    - Invoke Policy: Routes requests to the backend NEA environment API with a
+    60-second timeout, protocol-based caching (900s TTL), and header control
+    using an allowlist approach
+
+
+    API Settings:
+
+    Though CORS and Activity Logging are part of the DPv6_Assembly, they are not
+    available as policies in the form view but are categorized under API
+    settings in the outline view.
+
+    - CORS: Enabled to support cross-origin requests
+
+    - Activity Logging: Enabled with activity content logged on success and full
+    payload on errors
+
+
+    Product & Plan:
+
+    Products and Plans are not tightly coupled to individual APIs, allowing
+    flexible packaging and reuse across multiple APIs.
+
+    This API is packaged in DPv6_Product with DPv6_Plan that includes:
+
+    - Quota Limiting: 100 requests per minute quota (DPv6_Quota) with blocking
+    behavior when limit is reached.
+      Quota limiting is enforced at the plan level - when users subscribe to a plan, the quota applies to all their requests under that subscription.
+  domain: mcp
+  labels:
+    api-spec: ./singapore-air-temperature-api-spec.yml
+spec:
+  tools:
+    - name: retrieve_singapore_air_temperature
+      description: This tool retrieves real-time air temperature data across Singapore
+        from multiple NEA stations. It supports historical queries for analysis.
+        1. Users can request current temperatures from all stations. 2. It
+        allows temperature data for specific stations using station_id. 3.
+        Queries can be filtered by time range using start_time and end_time
+        parameters for interval analysis.
+      inputSchema:
+        type: object
+        properties:
+          station_id:
+            description: The unique identifier of the weather station to retrieve data from.
+              For example, use "S101" to get data for station S101. This
+              parameter is optional and can be omitted.
+            x-parameter-location: query
+            type: string
+            example: S101
+          start_time:
+            description: The starting timestamp to filter readings from a specific date and
+              time. For instance, "2025-11-11T00:00:00+08:00" will retrieve
+              readings from the start of the day on November 11, 2025. This
+              parameter is optional and can be omitted.
+            x-parameter-location: query
+            type: string
+            format: date-time
+            example: 2025-11-11T00:00:00+08:00
+          end_time:
+            description: The ending timestamp to filter readings up to a specific date and
+              time. For example, "2025-11-11T12:00:00+08:00" will include
+              readings up to noon on November 11, 2025. This parameter is
+              optional and can be omitted.
+            x-parameter-location: query
+            type: string
+            format: date-time
+            example: 2025-11-11T12:00:00+08:00
+      title: Get air temperature readings across Singapore
+      x-api-binding:
+        operationPath: /air-temperature
+        operationMethod: GET
+        api:
+          $path: ./singapore-air-temperature-api-spec.yml

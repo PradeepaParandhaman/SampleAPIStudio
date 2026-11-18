@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: newprojectvcsmcp-plan-v5d1e
+  namespace: NewProjectVCSMCP
+  version: "1.0"
+  tags: []
+  description: ""
+  domain: mcp
+spec:
+  qos:
+    withQuota:
+      newprojectvcsmcp-plan-v5d1e-limit:
+        - $ref: NewProjectVCSMCP:newprojectvcsmcp-quota-v5d1e:1.0

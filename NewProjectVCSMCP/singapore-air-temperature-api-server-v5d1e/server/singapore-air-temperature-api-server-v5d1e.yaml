@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: singapore-air-temperature-api-server-v5d1e
+  namespace: NewProjectVCSMCP
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: Singapore Air Temperature API MCP Server
+  protocolVersion: V2025_11_25
+  plans:
+    - $ref: NewProjectVCSMCP:newprojectvcsmcp-plan-v5d1e:1.0
+  policy-sequence:
+    - $ref: NewProjectVCSMCP:newprojectvcsmcp-freeflowpolicysequence-v5d1e:1.0
+  capabilities:
+    tools:
+      - $ref: NewProjectVCSMCP:singapore-air-temperature-api-tool-v5d1e:1.0
